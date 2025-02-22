@@ -1,3 +1,6 @@
 App.xbf
 ErrorWindows\errorWindows.xbf
+GUIOperation\NewTabNameWindow\OpenNewTab.xbf
+GUIOperation\PackTopology\ModulePages.xbf
+GUIOperation\TableConfig\TableConfigPage.xbf
 MainWindow.xbf

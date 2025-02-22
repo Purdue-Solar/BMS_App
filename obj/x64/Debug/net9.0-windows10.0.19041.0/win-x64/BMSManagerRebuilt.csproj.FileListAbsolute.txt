@@ -255,7 +255,6 @@ D:\Projects\App\BMS-Manager-App\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64
 D:\Projects\App\BMS-Manager-App\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64\hostfxr.dll
 D:\Projects\App\BMS-Manager-App\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64\hostpolicy.dll
 D:\Projects\App\BMS-Manager-App\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64\mscordaccore.dll
-D:\Projects\App\BMS-Manager-App\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64\mscordaccore_amd64_amd64_9.0.124.61010.dll
 D:\Projects\App\BMS-Manager-App\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64\mscordbi.dll
 D:\Projects\App\BMS-Manager-App\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64\mscorrc.dll
 D:\Projects\App\BMS-Manager-App\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64\msquic.dll
@@ -296,3 +295,19 @@ D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64
 D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\ErrorWindows\errorWindows.g.cs
 D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\ErrorWindows\errorWindows.xaml
 D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\ErrorWindows\errorWindows.xbf
+D:\Projects\App\BMS-Manager-App\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64\mscordaccore_amd64_amd64_9.0.225.6610.dll
+D:\Projects\App\BMS-Manager-App\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\TableConfig\TableConfigPage.xbf
+D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\TableConfig\TableConfigPage.g.i.cs
+D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\TableConfig\TableConfigPage.g.cs
+D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\TableConfig\TableConfigPage.xaml
+D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\TableConfig\TableConfigPage.xbf
+D:\Projects\App\BMS-Manager-App\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\PackTopology\ModulePages.xbf
+D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\PackTopology\ModulePages.g.i.cs
+D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\PackTopology\ModulePages.g.cs
+D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\PackTopology\ModulePages.xaml
+D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\PackTopology\ModulePages.xbf
+D:\Projects\App\BMS-Manager-App\bin\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\NewTabNameWindow\OpenNewTab.xbf
+D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\NewTabNameWindow\OpenNewTab.g.i.cs
+D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\NewTabNameWindow\OpenNewTab.g.cs
+D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\NewTabNameWindow\OpenNewTab.xaml
+D:\Projects\App\BMS-Manager-App\obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\GUIOperation\NewTabNameWindow\OpenNewTab.xbf

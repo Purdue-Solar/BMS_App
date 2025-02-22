@@ -28,13 +28,9 @@ using Microsoft.Extensions.Logging;
 using CsvHelper;
 using System.Runtime.InteropServices;
 using PSR.BMS.Configuration;
-using BMSManagerRebuilt.GUIOperation;
 using ScottPlot.WinUI;
 using ScottPlot;
-using LiveChartsCore.SkiaSharpView.Drawing.Geometries;
-using LiveChartsCore.SkiaSharpView;
-using LiveChartsCore;
-using LiveChartsCore.Defaults;
+using BMSManagerRebuilt.GUIOperation.TableConfig;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -62,24 +58,18 @@ namespace BMSManagerRebuilt
 
         private byte[] incomingData = new byte[ConfigurationWriter.MaxFileSize];
         private byte[] outcomingData = new byte[ConfigurationWriter.MaxFileSize];
+        //private PSR.BMS.Configuration.ConfigurationReader configuration = new PSR.BMS.Configuration.ConfigurationWriter();
 
-        /// <summary>
-        /// Debug Logger
-        /// </summary>
+        
         static ILoggerFactory factory = LoggerFactory.Create(builder => builder.AddConsole().AddDebug().SetMinimumLevel(LogLevel.Debug));
+        /// <summary>
+        /// Command Line Debug Logger Variable (not save in logfile)
+        /// </summary>
         ILogger logger = factory.CreateLogger<MainWindow>();
 
         public MainWindow()
         {
             this.InitializeComponent();
-            WinUIPlot1.Plot.Add.Scatter(xs, ys);
-            WinUIPlot1.Refresh();
-
-            WinUIPlot2.Plot.Add.Scatter(xs, ys);
-            WinUIPlot2.Refresh();
-
-            WinUIPlot3.Plot.Add.Scatter(xs, ys);
-            WinUIPlot3.Refresh();
         }
 
         private void Window_SizeChanged(object sender, Microsoft.UI.Xaml.WindowSizeChangedEventArgs e)
@@ -102,12 +92,33 @@ namespace BMSManagerRebuilt
             }
         }
 
-        //Wrapper for ButtonOperation
+        //Wrappers for ButtonOperation
         public void ConfigureButton_Click(object sender, RoutedEventArgs e)
         {
-            ButtonOperation.ConfigureButton_Click(sender, "Hello");
         }
 
+        //Wrappers for Text Box Operations
+
+
+        //Wrappers for CSV Processor
+
+
+        //Wrappers for Tab View Operation
+
+        public void TabCloseRequested(TabView sender, TabViewTabCloseRequestedEventArgs args)
+        {
+            TableTabViewOperation.Tabs_CloseButtonClick(sender, args);
+        }
+
+        public async void TableTabAddRequested(TabView sender, object args)
+        {
+            await TableTabViewOperation.TableTabs_AddButtonClick(sender, args);
+        }
+
+        public async void ModuleTabAddRequested(TabView sender, object args)
+        {
+            await ModuleTabViewOperation.ModuleTabs_AddButtonClick(sender, args);
+        }
 
 
         //private void changeButtonText(Button myButton, string text)
@@ -244,5 +255,5 @@ namespace BMSManagerRebuilt
         //    }
         //}
         ////End Line
-    }  
+    }
 }

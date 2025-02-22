@@ -15,6 +15,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="ErrorWindows/errorWindows.xaml" />
+    <None Remove="GUIOperation\PackTopology\ModulePages.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -60,6 +61,27 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ErrorWindows\" />
+    <Folder Include="GUIOperation\NewTabNameWindow\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="GUIOperation\PackTopology\ModulePages.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="GUIOperation\PackTopology\ModulePages.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="GUIOperation\TableConfigPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="GUIOperation\OpenNewTab.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <!--

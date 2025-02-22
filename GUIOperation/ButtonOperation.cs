@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ScottPlot.WinUI;
 
 namespace BMSManagerRebuilt.GUIOperation
 {
@@ -16,9 +17,9 @@ namespace BMSManagerRebuilt.GUIOperation
         /// </summary>
         /// <param name = "sender" > Will contained data about the XAML processor that triggered it</param>
         /// <param name = "e" ></ param >
-        public static void ConfigureButton_Click(object sender, string text)
+        public static void ExportData(object sender, string text)
         {
-            ChangeText((TextBox)sender, text);
+
         }
 
         /// <summary>
@@ -26,16 +27,19 @@ namespace BMSManagerRebuilt.GUIOperation
         /// </summary>
         /// <param name="sender">Will contained data about the XAML processor that triggered it</param>
         /// <param name="e"></param>
-        public static void TransitionButton_Click(object sender, RoutedEventArgs e)
+        public static void ImportData(object sender, RoutedEventArgs e)
         {
 
         }
 
-        public static void ChangeText(TextBox myBox, string text)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="plot"></param>
+        public static void RefreshGraph(object sender, WinUIPlot plot)
         {
-            myBox.Text = text;
+            plot.Refresh();
         }
-
-
     }
 }
