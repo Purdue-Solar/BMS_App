@@ -153,156 +153,164 @@
                 </TabViewItem>
 
                 <TabViewItem Header="CONTACTOR CONFIGURATION" HorizontalContentAlignment="Center" Background="Gray" Foreground="White" IsClosable="False">
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <StackPanel Orientation="Vertical">
-                            <TextBlock Text= "MAIN HIGH SIDE"/>
-                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <StackPanel Orientation="Vertical">
+                    <StackPanel>
+                        <TextBlock Text="Contactor Configuration" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="30" HorizontalAlignment="Center" HorizontalTextAlignment="Center"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text= "MAIN HIGH SIDE" HorizontalTextAlignment="Center" HorizontalAlignment="Center"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <StackPanel Orientation="Vertical">
 
-                                    <TextBlock Text="Index" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
-                                    <TextBlock Text="Enabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
-                                    <TextBlock Text="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,23,10,0"/>
-                                    <TextBlock Text="Active High" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
-                                    <TextBlock Text="Active Low" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
-                                    <TextBlock Text="Hold Delay Ms" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
-                                    <TextBlock Text="Hold Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
-                                    <TextBlock Text="Pull in Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Index" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                                        <TextBlock Text="Enabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
+                                        <TextBlock Text="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,23,10,0"/>
+                                        <TextBlock Text="Active High" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
+                                        <TextBlock Text="Active Low" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Hold Delay Ms" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
+                                        <TextBlock Text="Hold Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Pull in Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
 
-                                </StackPanel>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                </StackPanel>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                </StackPanel>
-                            </StackPanel>
-                        </StackPanel>
-
-                        <StackPanel Orientation="Vertical">
-                            <TextBlock Text= "MAIN LOW SIDE"/>
-                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <StackPanel Orientation="Vertical">
-
-                                    <TextBlock Text="Index" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
-                                    <TextBlock Text="Enabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
-                                    <TextBlock Text="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,23,10,0"/>
-                                    <TextBlock Text="Active High" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
-                                    <TextBlock Text="Active Low" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
-                                    <TextBlock Text="Hold Delay Ms" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
-                                    <TextBlock Text="Hold Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
-                                    <TextBlock Text="Pull in Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
-
-                                </StackPanel>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                </StackPanel>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                    </StackPanel>
                                 </StackPanel>
                             </StackPanel>
-                        </StackPanel>
 
-                        <StackPanel Orientation="Vertical">
-                            <TextBlock Text= "CHARGE"/>
-                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <StackPanel Orientation="Vertical">
+                            <Line Stroke="Black" Y1="350" Margin="15,10,15,0"/>
 
-                                    <TextBlock Text="Index" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
-                                    <TextBlock Text="Enabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
-                                    <TextBlock Text="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,23,10,0"/>
-                                    <TextBlock Text="Active High" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
-                                    <TextBlock Text="Active Low" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
-                                    <TextBlock Text="Hold Delay Ms" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
-                                    <TextBlock Text="Hold Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
-                                    <TextBlock Text="Pull in Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text= "MAIN LOW SIDE" HorizontalTextAlignment="Center" HorizontalAlignment="Center"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <StackPanel Orientation="Vertical">
 
-                                </StackPanel>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                </StackPanel>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="Index" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                                        <TextBlock Text="Enabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
+                                        <TextBlock Text="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,23,10,0"/>
+                                        <TextBlock Text="Active High" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
+                                        <TextBlock Text="Active Low" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Hold Delay Ms" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
+                                        <TextBlock Text="Hold Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Pull in Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+
+                                    </StackPanel>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                    </StackPanel>
                                 </StackPanel>
                             </StackPanel>
-                        </StackPanel>
 
+                            <Line Stroke="Black" Y1="350" Margin="15,10,15,0"/>
 
-                        <StackPanel Orientation="Vertical">
-                            <TextBlock Text= "PRECHARGE"/>
-                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text= "CHARGE" HorizontalTextAlignment="Center" HorizontalAlignment="Center"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <StackPanel Orientation="Vertical">
 
-                                    <TextBlock Text="Index" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
-                                    <TextBlock Text="Enabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
-                                    <TextBlock Text="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,23,10,0"/>
-                                    <TextBlock Text="Active High" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
-                                    <TextBlock Text="Active Low" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
-                                    <TextBlock Text="Hold Delay Ms" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
-                                    <TextBlock Text="Hold Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
-                                    <TextBlock Text="Pull in Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Index" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                                        <TextBlock Text="Enabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
+                                        <TextBlock Text="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,23,10,0"/>
+                                        <TextBlock Text="Active High" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
+                                        <TextBlock Text="Active Low" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Hold Delay Ms" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
+                                        <TextBlock Text="Hold Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Pull in Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
 
+                                    </StackPanel>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                    </StackPanel>
                                 </StackPanel>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                    <TextBox PlaceholderText="Values" Margin="5"/>
-                                </StackPanel>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                    <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                            </StackPanel>
+
+                            <Line Stroke="Black" Y1="350" Margin="15,10,15,0"/>
+
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text= "PRECHARGE" HorizontalTextAlignment="Center" HorizontalAlignment="Center"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <StackPanel Orientation="Vertical">
+
+                                        <TextBlock Text="Index" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                                        <TextBlock Text="Enabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
+                                        <TextBlock Text="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,23,10,0"/>
+                                        <TextBlock Text="Active High" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
+                                        <TextBlock Text="Active Low" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Hold Delay Ms" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
+                                        <TextBlock Text="Hold Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Pull in Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+
+                                    </StackPanel>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                    </StackPanel>
                                 </StackPanel>
                             </StackPanel>
                         </StackPanel>

@@ -31,6 +31,7 @@ using PSR.BMS.Configuration;
 using ScottPlot.WinUI;
 using ScottPlot;
 using BMSManagerRebuilt.GUIOperation.TableConfig;
+using BMSManagerRebuilt.GUIOperation;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -53,8 +54,6 @@ namespace BMSManagerRebuilt
         //private int tries = 22;
         //private bool portConnected = false;
         //private byte[] portBuffer = new byte[16];
-        double[] xs = { 1, 2, 3, 4, 5 };
-        double[] ys = { 1, 4, 9, 16, 25 };
 
         private byte[] incomingData = new byte[ConfigurationWriter.MaxFileSize];
         private byte[] outcomingData = new byte[ConfigurationWriter.MaxFileSize];
@@ -98,9 +97,6 @@ namespace BMSManagerRebuilt
         }
 
         //Wrappers for Text Box Operations
-
-
-        //Wrappers for CSV Processor
 
 
         //Wrappers for Tab View Operation
