@@ -14,9 +14,14 @@
             <Grid Height="500" Width="500" Background="White" VerticalAlignment="Center">
                 <ScottPlot:WinUIPlot x:Name="WinUIPlot"/>
             </Grid>
-            <Button HorizontalAlignment="Center">
-                REFRESH
-            </Button>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button HorizontalAlignment="Center">
+                    REFRESH
+                </Button>
+                <Button Click="ImportButton">
+                    IMPORT
+                </Button>
+            </StackPanel>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,30">
@@ -39,7 +44,5 @@
                 <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
             </StackPanel>
         </StackPanel>
-
-
     </StackPanel>
 </Page>

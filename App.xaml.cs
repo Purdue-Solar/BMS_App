@@ -36,6 +36,8 @@ namespace BMSManagerRebuilt
             this.InitializeComponent();
         }
 
+        public static Window ? m_window { get; private set; }
+
         /// <summary>s
         /// Invoked when the application is launched.
         /// </summary>
@@ -45,6 +47,5 @@ namespace BMSManagerRebuilt
             m_window = new MainWindow();
             m_window.Activate();
         }
-        private Window m_window;
     }
 }

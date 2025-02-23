@@ -27,14 +27,14 @@ namespace BMSManagerRebuilt.GUIOperation
     /// <summary>
     /// An empty window that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class OpenNewTab : Window
+    public sealed partial class TableNewTab : Window
     {
         static ILoggerFactory factory = LoggerFactory.Create(builder => builder.AddConsole().AddDebug().SetMinimumLevel(LogLevel.Debug));
         /// <summary>
         /// Command Line Debug Logger Variable (not save in logfile)
         /// </summary>
         ILogger logger = factory.CreateLogger<MainWindow>();
-        public OpenNewTab()
+        public TableNewTab()
         {
             this.InitializeComponent();
             AppWindow.Resize(new Windows.Graphics.SizeInt32(650, 250));
@@ -43,12 +43,25 @@ namespace BMSManagerRebuilt.GUIOperation
 
         public string TabName = default;
 
-        public void EnterPressed(object sender, KeyRoutedEventArgs e)
+        //public void EnterPressed(object sender, KeyRoutedEventArgs e)
+        //{
+        //    if (e.Key == (VirtualKey)13)
+        //    {
+        //        logger.LogDebug("Enter key pressed");
+        //        TabName = ((TextBlock) TabNames.SelectedValue).Text;
+        //    }
+        //}
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (e.Key == (VirtualKey)13)
+            logger.LogDebug("Button is clicked");
+            try
             {
-                logger.LogDebug("Enter key pressed");
-                TabName = EnterPressedText.Text;
+                TabName = ((TextBlock)TabNames.SelectedValue).Text;
+            }
+            catch (System.NullReferenceException exception)
+            {
+
             }
         }
     }

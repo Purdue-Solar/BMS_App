@@ -1,4 +1,5 @@
-﻿using BMSManagerRebuilt.GUIOperation.PackTopology;
+﻿using BMSManagerRebuilt.GUIOperation.NewTabNameWindow;
+using BMSManagerRebuilt.GUIOperation.PackTopology;
 using CsvHelper.TypeConversion;
 using Microsoft.Extensions.Logging;
 using Microsoft.UI.Xaml.Controls;
@@ -20,7 +21,7 @@ namespace BMSManagerRebuilt.GUIOperation.TableConfig
 
         public static async Task ModuleTabs_AddButtonClick(TabView sender,object args)
         {
-            OpenNewTab p_Window = new OpenNewTab();
+            ModuleNewTab p_Window = new ModuleNewTab();
             string TabName = default;
             p_Window.Activate();
             TabName = p_Window.TabName;
@@ -35,6 +36,7 @@ namespace BMSManagerRebuilt.GUIOperation.TableConfig
             
             //Close Window after TabName is changed
             p_Window.Close();
+            TabName = "MODULE" + TabName;
             
             //Initialized TabViewItem
             var newTab = new TabViewItem();

@@ -15,6 +15,11 @@ using Microsoft.UI.Xaml.Navigation;
 using ScottPlot.WinUI;
 using ScottPlot;
 using CsvHelper;
+using Windows.Networking.Connectivity;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
+using Windows.Storage.Pickers;
+using WinRT.Interop;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -27,19 +32,15 @@ namespace BMSManagerRebuilt.GUIOperation
     /// </summary>
     public sealed partial class TableConfigPage : Page
     {
-        double[] xs = { 1, 2, 3, 4, 5 };
-        double[] ys = { 1, 4, 9, 16, 25 };
+        static ILoggerFactory factory = LoggerFactory.Create(builder => builder.AddConsole().AddDebug().SetMinimumLevel(LogLevel.Debug));
+        static ILogger logger = factory.CreateLogger<MainWindow>();
 
         List<CSVRecord> CSVrecords = new List<CSVRecord>();
-        public string CSVPath = "D:\\Projects\\App\\BMS-Manager-App\\Battery3.0.2Test.csv";
+        public string CSVPath;
 
         public TableConfigPage()
         {
             this.InitializeComponent();
-            ReadCSV();
-            convert2Array();
-            WinUIPlot.Plot.Add.Scatter(Voltage, Resistance);
-            WinUIPlot.Refresh();
         }
 
         // Array Conversion
@@ -66,6 +67,32 @@ namespace BMSManagerRebuilt.GUIOperation
         public void ReadCSV()
         {
             CSVProcessor.ReadCSV(CSVPath, out CSVrecords);
+        }
+
+        //Button Operation
+        public async void ImportButton(object sender, RoutedEventArgs e)
+        {
+            logger.LogDebug("Import Button Clicked");
+            var picker = new Windows.Storage.Pickers.FileOpenPicker();
+            logger.LogDebug("picker Created");
+            picker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
+            picker.FileTypeFilter.Add(".csv");
+            logger.LogDebug("picker Configured");
+
+            nint windowHandle = WindowNative.GetWindowHandle(App.m_window);
+            InitializeWithWindow.Initialize(picker, windowHandle);
+
+            Windows.Storage.StorageFile CSVFile = await picker.PickSingleFileAsync();
+
+            if (CSVFile != null)
+            {
+                CSVPath = CSVFile.Path;
+                logger.LogDebug("Imported {CSVPath}", CSVPath);
+                ReadCSV();
+                convert2Array();
+                WinUIPlot.Plot.Axes.AutoScale();
+                WinUIPlot.Refresh();
+            }
         }
     }
 }

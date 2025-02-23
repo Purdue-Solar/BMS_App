@@ -24,7 +24,7 @@ namespace BMSManagerRebuilt.GUIOperation.TableConfig
 
         public static async Task TableTabs_AddButtonClick(TabView sender,object args)
         {
-            OpenNewTab p_Window = new OpenNewTab();
+            TableNewTab p_Window = new TableNewTab();
             string TabName = default;
             p_Window.Activate();
             TabName = p_Window.TabName;
