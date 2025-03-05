@@ -1,5 +1,4 @@
 App.xbf
-ErrorWindows\errorWindows.xbf
 GUIOperation\NewTabNameWindow\ModuleNewTab.xbf
 GUIOperation\NewTabNameWindow\TableNewTab.xbf
 GUIOperation\PackTopology\ModulePages.xbf

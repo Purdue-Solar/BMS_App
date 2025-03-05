@@ -39,12 +39,16 @@ namespace BMSManagerRebuilt.GUIOperation.NewTabNameWindow
 
         public string TabName = default;
 
-        public void EnterPressed(object sender, KeyRoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (e.Key == (VirtualKey)13)
+            logger.LogDebug("Button is clicked");
+            try
             {
-                logger.LogDebug("Enter key pressed");
-                TabName = ModuleNumber.Text;
+                TabName = ((TextBlock)TabNames.SelectedValue).Text;
+            }
+            catch (System.NullReferenceException exception)
+            {
+
             }
         }
 

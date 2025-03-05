@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Page
     x:Class="BMSManagerRebuilt.GUIOperation.TableConfigPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -9,17 +9,17 @@
     mc:Ignorable="d"
     xmlns:ScottPlot="using:ScottPlot.WinUI">
     <StackPanel Orientation="Vertical">
-        <TextBlock x:Name="TableTitle" Text="Uninitialized" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="30" HorizontalAlignment="Center" HorizontalTextAlignment="Center"/>
+        <TextBlock x:ConnectionId='2' x:Name="TableTitle" Text="Uninitialized" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="30" HorizontalAlignment="Center" HorizontalTextAlignment="Center"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <StackPanel Orientation="Vertical">
                 <Grid Height="500" Width="500" Background="White" VerticalAlignment="Center">
-                    <ScottPlot:WinUIPlot x:Name="WinUIPlot"/>
+                    <ScottPlot:WinUIPlot x:ConnectionId='4' x:Name="WinUIPlot"/>
                 </Grid>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                     <Button HorizontalAlignment="Center">
                         REFRESH
                     </Button>
-                    <Button Click="ImportButton">
+                    <Button x:ConnectionId='3'                     >
                         IMPORT
                     </Button>
                 </StackPanel>
@@ -48,3 +48,4 @@
         </StackPanel>
     </StackPanel>
 </Page>
+

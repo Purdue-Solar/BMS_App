@@ -20,6 +20,9 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Windows.Storage.Pickers;
 using WinRT.Interop;
+using System.Threading;
+using System.Security.Cryptography.X509Certificates;
+using BMSManagerRebuilt.GUIOperation.TableConfig;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -30,10 +33,13 @@ namespace BMSManagerRebuilt.GUIOperation
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class TableConfigPage : Page
+    public partial class TableConfigPage : Page
     {
         static ILoggerFactory factory = LoggerFactory.Create(builder => builder.AddConsole().AddDebug().SetMinimumLevel(LogLevel.Debug));
         static ILogger logger = factory.CreateLogger<MainWindow>();
+
+        public static string TabName;
+
 
         List<CSVRecord> CSVrecords = new List<CSVRecord>();
         public string CSVPath;
@@ -41,14 +47,19 @@ namespace BMSManagerRebuilt.GUIOperation
         public TableConfigPage()
         {
             this.InitializeComponent();
+            TabName = TableTabViewOperation.TabName;
+            TableTitle.Text = TabName;
+            logger.LogDebug("TableView TabName = {TabName}", TableTabViewOperation.TabName);
+            logger.LogDebug("Page initialized | TabName = {TabName}", TabName);
         }
 
         // Array Conversion
-
         List<int> Time = new List<int>();
         List<double> Current = new List<double>();
-        List<double> Resistance = new List<double>();
-        List<double> Voltage = new List<double>();
+        public List<double> Resistance { get; set; } = new List<double>();
+        public List<double> Voltage { get; set; } = new List<double>();
+        public List<double> WattHour { get; set; } = new();
+
 
         private void convert2Array()
         {
@@ -90,8 +101,21 @@ namespace BMSManagerRebuilt.GUIOperation
                 logger.LogDebug("Imported {CSVPath}", CSVPath);
                 ReadCSV();
                 convert2Array();
+                AddedScatter();
                 WinUIPlot.Plot.Axes.AutoScale();
                 WinUIPlot.Refresh();
+            }
+        }
+
+        public void AddedScatter()
+        {
+            if (TabName == "VOLTAGE REISITANCE TABLE")
+            {
+                WinUIPlot.Plot.Add.Scatter(Voltage, Resistance);
+            }
+            else
+            {
+                WinUIPlot.Plot.Add.Scatter(Voltage, WattHour);
             }
         }
     }

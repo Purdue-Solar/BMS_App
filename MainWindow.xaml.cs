@@ -55,40 +55,17 @@ namespace BMSManagerRebuilt
         //private bool portConnected = false;
         //private byte[] portBuffer = new byte[16];
 
-        private byte[] incomingData = new byte[ConfigurationWriter.MaxFileSize];
-        private byte[] outcomingData = new byte[ConfigurationWriter.MaxFileSize];
-        //private PSR.BMS.Configuration.ConfigurationReader configuration = new PSR.BMS.Configuration.ConfigurationWriter();
+        public static ushort Version = 1; // Change this every update
+        public byte[] incomingData = new byte[ConfigurationWriter.MaxFileSize];
+        public static byte[] outcomingData = new byte[ConfigurationWriter.MaxFileSize];
+        public static PSR.BMS.Configuration.ConfigurationWriter configuration = new(Version);
 
-        
         static ILoggerFactory factory = LoggerFactory.Create(builder => builder.AddConsole().AddDebug().SetMinimumLevel(LogLevel.Debug));
-        /// <summary>
-        /// Command Line Debug Logger Variable (not save in logfile)
-        /// </summary>
         ILogger logger = factory.CreateLogger<MainWindow>();
 
         public MainWindow()
         {
             this.InitializeComponent();
-        }
-
-        private void Window_SizeChanged(object sender, Microsoft.UI.Xaml.WindowSizeChangedEventArgs e)
-        {
-            if (e.Size.Width <= 1000)
-            {
-                MyScrollViewer.HorizontalScrollBarVisibility = ScrollBarVisibility.Visible;
-            }
-            else
-            {
-                MyScrollViewer.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
-            }
-            if (e.Size.Height <= 1000)
-            {
-                MyScrollViewer.VerticalScrollBarVisibility = ScrollBarVisibility.Visible;
-            }
-            else
-            {
-                MyScrollViewer.VerticalScrollBarVisibility = ScrollBarVisibility.Disabled;
-            }
         }
 
         //Wrappers for ButtonOperation

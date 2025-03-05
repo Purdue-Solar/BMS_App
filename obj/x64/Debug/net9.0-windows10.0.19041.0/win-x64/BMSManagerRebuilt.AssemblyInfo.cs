@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BMSManagerRebuilt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b91bd0b23eb5ae2a567a16c333cbbb72b94221cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+351b6ad7515794e1d0caf0d408f08c0794ee5ec4")]
 [assembly: System.Reflection.AssemblyProductAttribute("BMSManagerRebuilt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BMSManagerRebuilt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

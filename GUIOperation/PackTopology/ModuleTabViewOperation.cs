@@ -18,11 +18,12 @@ namespace BMSManagerRebuilt.GUIOperation.TableConfig
         /// </summary>
         static ILoggerFactory factory = LoggerFactory.Create(builder => builder.AddConsole().AddDebug().SetMinimumLevel(LogLevel.Debug));
         static ILogger logger = factory.CreateLogger<MainWindow>();
+        public static string TabName { get; set; }
 
         public static async Task ModuleTabs_AddButtonClick(TabView sender,object args)
         {
+            TabName = default;
             ModuleNewTab p_Window = new ModuleNewTab();
-            string TabName = default;
             p_Window.Activate();
             TabName = p_Window.TabName;
 
@@ -36,15 +37,14 @@ namespace BMSManagerRebuilt.GUIOperation.TableConfig
             
             //Close Window after TabName is changed
             p_Window.Close();
-            TabName = "MODULE" + TabName;
             
             //Initialized TabViewItem
             var newTab = new TabViewItem();
             newTab.HorizontalContentAlignment = Microsoft.UI.Xaml.HorizontalAlignment.Center;
             newTab.Header = TabName;
             Frame newTabFrame = new Frame();
-            newTabFrame.Navigate(typeof(ModulePages));
 
+            newTabFrame.Navigate(typeof(ModulePages));
             newTab.Content = newTabFrame; 
             sender.TabItems.Add(newTab);
             sender.SelectedItem = newTab;

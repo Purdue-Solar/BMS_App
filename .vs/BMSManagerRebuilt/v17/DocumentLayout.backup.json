@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Projects\\App\\BMS-Manager-App\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|d:\\projects\\app\\bms-manager-app\\guioperation\\packtopology\\modulepages.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|solutionrelative:guioperation\\packtopology\\modulepages.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|d:\\projects\\app\\bms-manager-app\\guioperation\\tableconfig\\tabletabviewoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|solutionrelative:guioperation\\tableconfig\\tabletabviewoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|d:\\projects\\app\\bms-manager-app\\guioperation\\packtopology\\modulepages.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|solutionrelative:guioperation\\packtopology\\modulepages.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|d:\\projects\\app\\bms-manager-app\\guioperation\\newtabnamewindow\\modulenewtab.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|solutionrelative:guioperation\\newtabnamewindow\\modulenewtab.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|d:\\projects\\app\\bms-manager-app\\guioperation\\newtabnamewindow\\modulenewtab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|solutionrelative:guioperation\\newtabnamewindow\\modulenewtab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|d:\\projects\\app\\bms-manager-app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3DD1161-49FC-43AD-B82D-D18810DFE402}|BMSManagerRebuilt.csproj|d:\\projects\\app\\bms-manager-app\\guioperation\\packtopology\\moduletabviewoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,41 +54,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ModuleTabViewOperation.cs",
-              "DocumentMoniker": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\PackTopology\\ModuleTabViewOperation.cs",
-              "RelativeDocumentMoniker": "GUIOperation\\PackTopology\\ModuleTabViewOperation.cs",
-              "ToolTip": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\PackTopology\\ModuleTabViewOperation.cs",
-              "RelativeToolTip": "GUIOperation\\PackTopology\\ModuleTabViewOperation.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T16:37:49.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ModuleNewTab.xaml.cs",
-              "DocumentMoniker": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\NewTabNameWindow\\ModuleNewTab.xaml.cs",
-              "RelativeDocumentMoniker": "GUIOperation\\NewTabNameWindow\\ModuleNewTab.xaml.cs",
-              "ToolTip": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\NewTabNameWindow\\ModuleNewTab.xaml.cs",
-              "RelativeToolTip": "GUIOperation\\NewTabNameWindow\\ModuleNewTab.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAAAsAAAAAAAAAA==",
+              "Title": "TableTabViewOperation.cs",
+              "DocumentMoniker": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\TableConfig\\TableTabViewOperation.cs",
+              "RelativeDocumentMoniker": "GUIOperation\\TableConfig\\TableTabViewOperation.cs",
+              "ToolTip": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\TableConfig\\TableTabViewOperation.cs",
+              "RelativeToolTip": "GUIOperation\\TableConfig\\TableTabViewOperation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T16:27:56.304Z",
+              "WhenOpened": "2025-03-03T02:03:16.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ModulePages.xaml",
+              "DocumentMoniker": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\PackTopology\\ModulePages.xaml",
+              "RelativeDocumentMoniker": "GUIOperation\\PackTopology\\ModulePages.xaml",
+              "ToolTip": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\PackTopology\\ModulePages.xaml",
+              "RelativeToolTip": "GUIOperation\\PackTopology\\ModulePages.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-01T19:52:48.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModulePages.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\PackTopology\\ModulePages.xaml.cs",
+              "RelativeDocumentMoniker": "GUIOperation\\PackTopology\\ModulePages.xaml.cs",
+              "ToolTip": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\PackTopology\\ModulePages.xaml.cs",
+              "RelativeToolTip": "GUIOperation\\PackTopology\\ModulePages.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvyAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T19:52:45.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ModuleNewTab.xaml",
               "DocumentMoniker": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\NewTabNameWindow\\ModuleNewTab.xaml",
               "RelativeDocumentMoniker": "GUIOperation\\NewTabNameWindow\\ModuleNewTab.xaml",
               "ToolTip": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\NewTabNameWindow\\ModuleNewTab.xaml",
               "RelativeToolTip": "GUIOperation\\NewTabNameWindow\\ModuleNewTab.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-23T16:27:46.873Z",
+              "WhenOpened": "2025-03-01T20:53:57.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModuleTabViewOperation.cs",
+              "DocumentMoniker": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\PackTopology\\ModuleTabViewOperation.cs",
+              "RelativeDocumentMoniker": "GUIOperation\\PackTopology\\ModuleTabViewOperation.cs",
+              "ToolTip": "D:\\Projects\\App\\BMS-Manager-App\\GUIOperation\\PackTopology\\ModuleTabViewOperation.cs",
+              "RelativeToolTip": "GUIOperation\\PackTopology\\ModuleTabViewOperation.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T20:51:05.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Projects\\App\\BMS-Manager-App\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Projects\\App\\BMS-Manager-App\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAAIBAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-01T20:37:24.154Z",
               "EditorCaption": ""
             }
           ]

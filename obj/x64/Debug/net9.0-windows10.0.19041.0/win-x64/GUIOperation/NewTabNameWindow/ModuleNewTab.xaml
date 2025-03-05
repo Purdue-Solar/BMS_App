@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Window
     x:Class="BMSManagerRebuilt.GUIOperation.NewTabNameWindow.ModuleNewTab"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -11,14 +11,15 @@
 
     <Grid Background="DimGray">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
-            <ListBox x:Name="TabNames" DisplayMemberPath="Source" Background="Gray" HorizontalContentAlignment="Center">
+            <ListBox x:ConnectionId='2' x:Name="TabNames" DisplayMemberPath="Source" Background="Gray" HorizontalContentAlignment="Center">
                 <TextBlock Text="MODULE 1"/>
                 <TextBlock Text="MODULE 2"/>
                 <TextBlock Text="MODULE 3"/>
             </ListBox>
-            <Button Click="Button_Click" HorizontalAlignment="Center">
+            <Button x:ConnectionId='3'                      HorizontalAlignment="Center">
                 Enter
             </Button>
         </StackPanel>
     </Grid>
 </Window>
+

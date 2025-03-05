@@ -6,11 +6,11 @@
     xmlns:local="using:BMSManagerRebuilt"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" SizeChanged="Window_SizeChanged"
+    mc:Ignorable="d"
     xmlns:ScottPlot="using:ScottPlot.WinUI">
 
 
-    <ScrollViewer x:Name="MyScrollViewer" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Disabled">
+    <ScrollViewer x:Name="MyScrollViewer" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
         <StackPanel Background="DimGray">
             <Grid>
                 <TextBlock Text="PSR BMS GUI ver 1.0.0" Foreground="Orange" FontWeight="Bold" FontSize="30" FontFamily="Times New Roman" VerticalAlignment="Top" HorizontalAlignment="Left"/>
@@ -326,7 +326,7 @@
                                     <TabViewItem Header="OVERVIEW" HorizontalContentAlignment="Center" IsClosable="False">
                                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                             <StackPanel Orientation="Vertical">
-                                                <TextBlock Text="Cell Groups" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                                                <TextBlock Text="Number of Cell Groups" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
                                                 <TextBlock Text="Number of Parallel&#10; Cells" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,6,10,0"/>
                                                 <TextBlock Text="Number of Series&#10; Cells" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,5,10,0"/>
                                                 <TextBlock Text="Reserved" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,15,10,0"/>

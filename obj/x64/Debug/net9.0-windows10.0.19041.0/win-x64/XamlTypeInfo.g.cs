@@ -226,93 +226,95 @@ namespace BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[42];
+            _typeNameTable = new string[43];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
             _typeNameTable[3] = "Boolean";
-            _typeNameTable[4] = "BMSManagerRebuilt.errorWindows";
+            _typeNameTable[4] = "BMSManagerRebuilt.GUIOperation.NewTabNameWindow.ModuleNewTab";
             _typeNameTable[5] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[6] = "BMSManagerRebuilt.GUIOperation.NewTabNameWindow.ModuleNewTab";
-            _typeNameTable[7] = "BMSManagerRebuilt.GUIOperation.TableNewTab";
-            _typeNameTable[8] = "BMSManagerRebuilt.GUIOperation.PackTopology.ModulePages";
-            _typeNameTable[9] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[10] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[11] = "ScottPlot.WinUI.WinUIPlot";
-            _typeNameTable[12] = "ScottPlot.Plot";
-            _typeNameTable[13] = "ScottPlot.IMultiplot";
-            _typeNameTable[14] = "SkiaSharp.GRContext";
-            _typeNameTable[15] = "SkiaSharp.GRRecordingContext";
-            _typeNameTable[16] = "SkiaSharp.SKObject";
-            _typeNameTable[17] = "SkiaSharp.SKNativeObject";
-            _typeNameTable[18] = "ScottPlot.IPlotMenu";
-            _typeNameTable[19] = "ScottPlot.Interactivity.UserInputProcessor";
-            _typeNameTable[20] = "Single";
-            _typeNameTable[21] = "BMSManagerRebuilt.GUIOperation.TableConfigPage";
-            _typeNameTable[22] = "Microsoft.UI.Xaml.Controls.TabView";
-            _typeNameTable[23] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[24] = "System.Collections.Generic.IList`1<Object>";
-            _typeNameTable[25] = "System.Windows.Input.ICommand";
-            _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode";
-            _typeNameTable[27] = "System.Enum";
-            _typeNameTable[28] = "System.ValueType";
-            _typeNameTable[29] = "Int32";
-            _typeNameTable[30] = "Microsoft.UI.Xaml.DataTemplate";
-            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.TabViewWidthMode";
-            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.TabViewItem";
-            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.ListViewItem";
-            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.IconSource";
-            _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings";
-            _typeNameTable[38] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[39] = "BMSManagerRebuilt.MainWindow";
-            _typeNameTable[40] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[41] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[6] = "BMSManagerRebuilt.GUIOperation.TableNewTab";
+            _typeNameTable[7] = "BMSManagerRebuilt.GUIOperation.PackTopology.ModulePages";
+            _typeNameTable[8] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[9] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[10] = "ScottPlot.WinUI.WinUIPlot";
+            _typeNameTable[11] = "ScottPlot.Plot";
+            _typeNameTable[12] = "ScottPlot.IMultiplot";
+            _typeNameTable[13] = "SkiaSharp.GRContext";
+            _typeNameTable[14] = "SkiaSharp.GRRecordingContext";
+            _typeNameTable[15] = "SkiaSharp.SKObject";
+            _typeNameTable[16] = "SkiaSharp.SKNativeObject";
+            _typeNameTable[17] = "ScottPlot.IPlotMenu";
+            _typeNameTable[18] = "ScottPlot.Interactivity.UserInputProcessor";
+            _typeNameTable[19] = "Single";
+            _typeNameTable[20] = "BMSManagerRebuilt.GUIOperation.TableConfigPage";
+            _typeNameTable[21] = "System.Collections.Generic.List`1<Double>";
+            _typeNameTable[22] = "Double";
+            _typeNameTable[23] = "Microsoft.UI.Xaml.Controls.TabView";
+            _typeNameTable[24] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[25] = "System.Collections.Generic.IList`1<Object>";
+            _typeNameTable[26] = "System.Windows.Input.ICommand";
+            _typeNameTable[27] = "Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode";
+            _typeNameTable[28] = "System.Enum";
+            _typeNameTable[29] = "System.ValueType";
+            _typeNameTable[30] = "Int32";
+            _typeNameTable[31] = "Microsoft.UI.Xaml.DataTemplate";
+            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.TabViewWidthMode";
+            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.TabViewItem";
+            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.ListViewItem";
+            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.IconSource";
+            _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings";
+            _typeNameTable[39] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[40] = "BMSManagerRebuilt.MainWindow";
+            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[42] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[42];
+            _typeTable = new global::System.Type[43];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
             _typeTable[3] = typeof(global::System.Boolean);
-            _typeTable[4] = typeof(global::BMSManagerRebuilt.errorWindows);
+            _typeTable[4] = typeof(global::BMSManagerRebuilt.GUIOperation.NewTabNameWindow.ModuleNewTab);
             _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[6] = typeof(global::BMSManagerRebuilt.GUIOperation.NewTabNameWindow.ModuleNewTab);
-            _typeTable[7] = typeof(global::BMSManagerRebuilt.GUIOperation.TableNewTab);
-            _typeTable[8] = typeof(global::BMSManagerRebuilt.GUIOperation.PackTopology.ModulePages);
-            _typeTable[9] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[10] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[11] = typeof(global::ScottPlot.WinUI.WinUIPlot);
-            _typeTable[12] = typeof(global::ScottPlot.Plot);
-            _typeTable[13] = typeof(global::ScottPlot.IMultiplot);
-            _typeTable[14] = typeof(global::SkiaSharp.GRContext);
-            _typeTable[15] = typeof(global::SkiaSharp.GRRecordingContext);
-            _typeTable[16] = typeof(global::SkiaSharp.SKObject);
-            _typeTable[17] = typeof(global::SkiaSharp.SKNativeObject);
-            _typeTable[18] = typeof(global::ScottPlot.IPlotMenu);
-            _typeTable[19] = typeof(global::ScottPlot.Interactivity.UserInputProcessor);
-            _typeTable[20] = typeof(global::System.Single);
-            _typeTable[21] = typeof(global::BMSManagerRebuilt.GUIOperation.TableConfigPage);
-            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Controls.TabView);
-            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[24] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
-            _typeTable[25] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode);
-            _typeTable[27] = typeof(global::System.Enum);
-            _typeTable[28] = typeof(global::System.ValueType);
-            _typeTable[29] = typeof(global::System.Int32);
-            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
-            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.TabViewWidthMode);
-            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.TabViewItem);
-            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.ListViewItem);
-            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
-            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
-            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings);
-            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[39] = typeof(global::BMSManagerRebuilt.MainWindow);
-            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[41] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[6] = typeof(global::BMSManagerRebuilt.GUIOperation.TableNewTab);
+            _typeTable[7] = typeof(global::BMSManagerRebuilt.GUIOperation.PackTopology.ModulePages);
+            _typeTable[8] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[9] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[10] = typeof(global::ScottPlot.WinUI.WinUIPlot);
+            _typeTable[11] = typeof(global::ScottPlot.Plot);
+            _typeTable[12] = typeof(global::ScottPlot.IMultiplot);
+            _typeTable[13] = typeof(global::SkiaSharp.GRContext);
+            _typeTable[14] = typeof(global::SkiaSharp.GRRecordingContext);
+            _typeTable[15] = typeof(global::SkiaSharp.SKObject);
+            _typeTable[16] = typeof(global::SkiaSharp.SKNativeObject);
+            _typeTable[17] = typeof(global::ScottPlot.IPlotMenu);
+            _typeTable[18] = typeof(global::ScottPlot.Interactivity.UserInputProcessor);
+            _typeTable[19] = typeof(global::System.Single);
+            _typeTable[20] = typeof(global::BMSManagerRebuilt.GUIOperation.TableConfigPage);
+            _typeTable[21] = typeof(global::System.Collections.Generic.List<global::System.Double>);
+            _typeTable[22] = typeof(global::System.Double);
+            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Controls.TabView);
+            _typeTable[24] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[25] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
+            _typeTable[26] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode);
+            _typeTable[28] = typeof(global::System.Enum);
+            _typeTable[29] = typeof(global::System.ValueType);
+            _typeTable[30] = typeof(global::System.Int32);
+            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
+            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.TabViewWidthMode);
+            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.TabViewItem);
+            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.ListViewItem);
+            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
+            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
+            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings);
+            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[40] = typeof(global::BMSManagerRebuilt.MainWindow);
+            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[42] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -348,45 +350,45 @@ namespace BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo
         }
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
-        private object Activate_4_errorWindows() { return new global::BMSManagerRebuilt.errorWindows(); }
-        private object Activate_6_ModuleNewTab() { return new global::BMSManagerRebuilt.GUIOperation.NewTabNameWindow.ModuleNewTab(); }
-        private object Activate_7_TableNewTab() { return new global::BMSManagerRebuilt.GUIOperation.TableNewTab(); }
-        private object Activate_8_ModulePages() { return new global::BMSManagerRebuilt.GUIOperation.PackTopology.ModulePages(); }
-        private object Activate_11_WinUIPlot() { return new global::ScottPlot.WinUI.WinUIPlot(); }
-        private object Activate_12_Plot() { return new global::ScottPlot.Plot(); }
-        private object Activate_21_TableConfigPage() { return new global::BMSManagerRebuilt.GUIOperation.TableConfigPage(); }
-        private object Activate_22_TabView() { return new global::Microsoft.UI.Xaml.Controls.TabView(); }
-        private object Activate_33_TabViewItem() { return new global::Microsoft.UI.Xaml.Controls.TabViewItem(); }
-        private object Activate_37_TabViewItemTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings(); }
-        private object Activate_39_MainWindow() { return new global::BMSManagerRebuilt.MainWindow(); }
-        private object Activate_40_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_4_ModuleNewTab() { return new global::BMSManagerRebuilt.GUIOperation.NewTabNameWindow.ModuleNewTab(); }
+        private object Activate_6_TableNewTab() { return new global::BMSManagerRebuilt.GUIOperation.TableNewTab(); }
+        private object Activate_7_ModulePages() { return new global::BMSManagerRebuilt.GUIOperation.PackTopology.ModulePages(); }
+        private object Activate_10_WinUIPlot() { return new global::ScottPlot.WinUI.WinUIPlot(); }
+        private object Activate_11_Plot() { return new global::ScottPlot.Plot(); }
+        private object Activate_20_TableConfigPage() { return new global::BMSManagerRebuilt.GUIOperation.TableConfigPage(); }
+        private object Activate_21_List() { return new global::System.Collections.Generic.List<global::System.Double>(); }
+        private object Activate_23_TabView() { return new global::Microsoft.UI.Xaml.Controls.TabView(); }
+        private object Activate_34_TabViewItem() { return new global::Microsoft.UI.Xaml.Controls.TabViewItem(); }
+        private object Activate_38_TabViewItemTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings(); }
+        private object Activate_40_MainWindow() { return new global::BMSManagerRebuilt.MainWindow(); }
+        private object Activate_41_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
-        private void StaticInitializer_4_errorWindows() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::BMSManagerRebuilt.errorWindows).TypeHandle);
-        private void StaticInitializer_6_ModuleNewTab() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::BMSManagerRebuilt.GUIOperation.NewTabNameWindow.ModuleNewTab).TypeHandle);
-        private void StaticInitializer_7_TableNewTab() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::BMSManagerRebuilt.GUIOperation.TableNewTab).TypeHandle);
-        private void StaticInitializer_8_ModulePages() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::BMSManagerRebuilt.GUIOperation.PackTopology.ModulePages).TypeHandle);
-        private void StaticInitializer_11_WinUIPlot() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::ScottPlot.WinUI.WinUIPlot).TypeHandle);
-        private void StaticInitializer_12_Plot() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::ScottPlot.Plot).TypeHandle);
-        private void StaticInitializer_13_IMultiplot() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::ScottPlot.IMultiplot).TypeHandle);
-        private void StaticInitializer_14_GRContext() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::SkiaSharp.GRContext).TypeHandle);
-        private void StaticInitializer_15_GRRecordingContext() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::SkiaSharp.GRRecordingContext).TypeHandle);
-        private void StaticInitializer_16_SKObject() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::SkiaSharp.SKObject).TypeHandle);
-        private void StaticInitializer_17_SKNativeObject() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::SkiaSharp.SKNativeObject).TypeHandle);
-        private void StaticInitializer_18_IPlotMenu() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::ScottPlot.IPlotMenu).TypeHandle);
-        private void StaticInitializer_19_UserInputProcessor() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::ScottPlot.Interactivity.UserInputProcessor).TypeHandle);
-        private void StaticInitializer_21_TableConfigPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::BMSManagerRebuilt.GUIOperation.TableConfigPage).TypeHandle);
-        private void StaticInitializer_22_TabView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TabView).TypeHandle);
-        private void StaticInitializer_24_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::System.Object>).TypeHandle);
-        private void StaticInitializer_25_ICommand() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Windows.Input.ICommand).TypeHandle);
-        private void StaticInitializer_26_TabViewCloseButtonOverlayMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode).TypeHandle);
-        private void StaticInitializer_27_Enum() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Enum).TypeHandle);
-        private void StaticInitializer_28_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
-        private void StaticInitializer_32_TabViewWidthMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TabViewWidthMode).TypeHandle);
-        private void StaticInitializer_33_TabViewItem() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TabViewItem).TypeHandle);
-        private void StaticInitializer_37_TabViewItemTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings).TypeHandle);
-        private void StaticInitializer_39_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::BMSManagerRebuilt.MainWindow).TypeHandle);
-        private void StaticInitializer_40_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_41_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_4_ModuleNewTab() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::BMSManagerRebuilt.GUIOperation.NewTabNameWindow.ModuleNewTab).TypeHandle);
+        private void StaticInitializer_6_TableNewTab() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::BMSManagerRebuilt.GUIOperation.TableNewTab).TypeHandle);
+        private void StaticInitializer_7_ModulePages() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::BMSManagerRebuilt.GUIOperation.PackTopology.ModulePages).TypeHandle);
+        private void StaticInitializer_10_WinUIPlot() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::ScottPlot.WinUI.WinUIPlot).TypeHandle);
+        private void StaticInitializer_11_Plot() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::ScottPlot.Plot).TypeHandle);
+        private void StaticInitializer_12_IMultiplot() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::ScottPlot.IMultiplot).TypeHandle);
+        private void StaticInitializer_13_GRContext() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::SkiaSharp.GRContext).TypeHandle);
+        private void StaticInitializer_14_GRRecordingContext() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::SkiaSharp.GRRecordingContext).TypeHandle);
+        private void StaticInitializer_15_SKObject() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::SkiaSharp.SKObject).TypeHandle);
+        private void StaticInitializer_16_SKNativeObject() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::SkiaSharp.SKNativeObject).TypeHandle);
+        private void StaticInitializer_17_IPlotMenu() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::ScottPlot.IPlotMenu).TypeHandle);
+        private void StaticInitializer_18_UserInputProcessor() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::ScottPlot.Interactivity.UserInputProcessor).TypeHandle);
+        private void StaticInitializer_20_TableConfigPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::BMSManagerRebuilt.GUIOperation.TableConfigPage).TypeHandle);
+        private void StaticInitializer_21_List() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.List<global::System.Double>).TypeHandle);
+        private void StaticInitializer_23_TabView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TabView).TypeHandle);
+        private void StaticInitializer_25_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::System.Object>).TypeHandle);
+        private void StaticInitializer_26_ICommand() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Windows.Input.ICommand).TypeHandle);
+        private void StaticInitializer_27_TabViewCloseButtonOverlayMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode).TypeHandle);
+        private void StaticInitializer_28_Enum() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Enum).TypeHandle);
+        private void StaticInitializer_29_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
+        private void StaticInitializer_33_TabViewWidthMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TabViewWidthMode).TypeHandle);
+        private void StaticInitializer_34_TabViewItem() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TabViewItem).TypeHandle);
+        private void StaticInitializer_38_TabViewItemTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings).TypeHandle);
+        private void StaticInitializer_40_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::BMSManagerRebuilt.MainWindow).TypeHandle);
+        private void StaticInitializer_41_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_42_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -394,13 +396,19 @@ namespace BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_24_IList(object instance, object item)
+        private void VectorAdd_21_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.Double>)instance;
+            var newItem = (global::System.Double)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_25_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_41_IList(object instance, object item)
+        private void VectorAdd_42_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -438,10 +446,10 @@ namespace BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  BMSManagerRebuilt.errorWindows
+            case 4:   //  BMSManagerRebuilt.GUIOperation.NewTabNameWindow.ModuleNewTab
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_4_errorWindows;
-                userType.StaticInitializer = StaticInitializer_4_errorWindows;
+                userType.Activator = Activate_4_ModuleNewTab;
+                userType.StaticInitializer = StaticInitializer_4_ModuleNewTab;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -450,42 +458,34 @@ namespace BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  BMSManagerRebuilt.GUIOperation.NewTabNameWindow.ModuleNewTab
+            case 6:   //  BMSManagerRebuilt.GUIOperation.TableNewTab
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_6_ModuleNewTab;
-                userType.StaticInitializer = StaticInitializer_6_ModuleNewTab;
+                userType.Activator = Activate_6_TableNewTab;
+                userType.StaticInitializer = StaticInitializer_6_TableNewTab;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  BMSManagerRebuilt.GUIOperation.TableNewTab
-                userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_7_TableNewTab;
-                userType.StaticInitializer = StaticInitializer_7_TableNewTab;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 8:   //  BMSManagerRebuilt.GUIOperation.PackTopology.ModulePages
+            case 7:   //  BMSManagerRebuilt.GUIOperation.PackTopology.ModulePages
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_ModulePages;
-                userType.StaticInitializer = StaticInitializer_8_ModulePages;
+                userType.Activator = Activate_7_ModulePages;
+                userType.StaticInitializer = StaticInitializer_7_ModulePages;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  Microsoft.UI.Xaml.Controls.Page
+            case 8:   //  Microsoft.UI.Xaml.Controls.Page
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 10:   //  Microsoft.UI.Xaml.Controls.UserControl
+            case 9:   //  Microsoft.UI.Xaml.Controls.UserControl
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  ScottPlot.WinUI.WinUIPlot
+            case 10:   //  ScottPlot.WinUI.WinUIPlot
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_11_WinUIPlot;
-                userType.StaticInitializer = StaticInitializer_11_WinUIPlot;
+                userType.Activator = Activate_10_WinUIPlot;
+                userType.StaticInitializer = StaticInitializer_10_WinUIPlot;
                 userType.AddMemberName("Plot");
                 userType.AddMemberName("Multiplot");
                 userType.AddMemberName("GRContext");
@@ -496,75 +496,90 @@ namespace BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 12:   //  ScottPlot.Plot
+            case 11:   //  ScottPlot.Plot
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_12_Plot;
+                userType.StaticInitializer = StaticInitializer_11_Plot;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 13:   //  ScottPlot.IMultiplot
+            case 12:   //  ScottPlot.IMultiplot
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_13_IMultiplot;
+                userType.StaticInitializer = StaticInitializer_12_IMultiplot;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 14:   //  SkiaSharp.GRContext
+            case 13:   //  SkiaSharp.GRContext
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("SkiaSharp.GRRecordingContext"));
-                userType.StaticInitializer = StaticInitializer_14_GRContext;
+                userType.StaticInitializer = StaticInitializer_13_GRContext;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 15:   //  SkiaSharp.GRRecordingContext
+            case 14:   //  SkiaSharp.GRRecordingContext
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("SkiaSharp.SKObject"));
-                userType.StaticInitializer = StaticInitializer_15_GRRecordingContext;
+                userType.StaticInitializer = StaticInitializer_14_GRRecordingContext;
                 xamlType = userType;
                 break;
 
-            case 16:   //  SkiaSharp.SKObject
+            case 15:   //  SkiaSharp.SKObject
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("SkiaSharp.SKNativeObject"));
-                userType.StaticInitializer = StaticInitializer_16_SKObject;
+                userType.StaticInitializer = StaticInitializer_15_SKObject;
                 xamlType = userType;
                 break;
 
-            case 17:   //  SkiaSharp.SKNativeObject
+            case 16:   //  SkiaSharp.SKNativeObject
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_17_SKNativeObject;
+                userType.StaticInitializer = StaticInitializer_16_SKNativeObject;
                 xamlType = userType;
                 break;
 
-            case 18:   //  ScottPlot.IPlotMenu
+            case 17:   //  ScottPlot.IPlotMenu
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_18_IPlotMenu;
+                userType.StaticInitializer = StaticInitializer_17_IPlotMenu;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 19:   //  ScottPlot.Interactivity.UserInputProcessor
+            case 18:   //  ScottPlot.Interactivity.UserInputProcessor
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_19_UserInputProcessor;
+                userType.StaticInitializer = StaticInitializer_18_UserInputProcessor;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Single
+            case 19:   //  Single
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 21:   //  BMSManagerRebuilt.GUIOperation.TableConfigPage
+            case 20:   //  BMSManagerRebuilt.GUIOperation.TableConfigPage
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_TableConfigPage;
-                userType.StaticInitializer = StaticInitializer_21_TableConfigPage;
+                userType.Activator = Activate_20_TableConfigPage;
+                userType.StaticInitializer = StaticInitializer_20_TableConfigPage;
+                userType.AddMemberName("Resistance");
+                userType.AddMemberName("Voltage");
+                userType.AddMemberName("WattHour");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  Microsoft.UI.Xaml.Controls.TabView
+            case 21:   //  System.Collections.Generic.List`1<Double>
+                userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.StaticInitializer = StaticInitializer_21_List;
+                userType.CollectionAdd = VectorAdd_21_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 22:   //  Double
+                xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 23:   //  Microsoft.UI.Xaml.Controls.TabView
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_22_TabView;
-                userType.StaticInitializer = StaticInitializer_22_TabView;
+                userType.Activator = Activate_23_TabView;
+                userType.StaticInitializer = StaticInitializer_23_TabView;
                 userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.TabView.TabItems");
                 userType.AddMemberName("TabItems");
                 userType.AddMemberName("IsAddTabButtonVisible");
@@ -588,71 +603,71 @@ namespace BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 23:   //  Microsoft.UI.Xaml.Controls.Control
+            case 24:   //  Microsoft.UI.Xaml.Controls.Control
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 24:   //  System.Collections.Generic.IList`1<Object>
+            case 25:   //  System.Collections.Generic.IList`1<Object>
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_24_IList;
-                userType.CollectionAdd = VectorAdd_24_IList;
+                userType.StaticInitializer = StaticInitializer_25_IList;
+                userType.CollectionAdd = VectorAdd_25_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 25:   //  System.Windows.Input.ICommand
+            case 26:   //  System.Windows.Input.ICommand
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_25_ICommand;
+                userType.StaticInitializer = StaticInitializer_26_ICommand;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 26:   //  Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode
+            case 27:   //  Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_26_TabViewCloseButtonOverlayMode;
+                userType.StaticInitializer = StaticInitializer_27_TabViewCloseButtonOverlayMode;
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode.Auto);
                 userType.AddEnumValue("OnPointerOver", global::Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode.OnPointerOver);
                 userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode.Always);
                 xamlType = userType;
                 break;
 
-            case 27:   //  System.Enum
+            case 28:   //  System.Enum
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.StaticInitializer = StaticInitializer_27_Enum;
+                userType.StaticInitializer = StaticInitializer_28_Enum;
                 xamlType = userType;
                 break;
 
-            case 28:   //  System.ValueType
+            case 29:   //  System.ValueType
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_28_ValueType;
+                userType.StaticInitializer = StaticInitializer_29_ValueType;
                 xamlType = userType;
                 break;
 
-            case 29:   //  Int32
+            case 30:   //  Int32
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  Microsoft.UI.Xaml.DataTemplate
+            case 31:   //  Microsoft.UI.Xaml.DataTemplate
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 31:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
+            case 32:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 32:   //  Microsoft.UI.Xaml.Controls.TabViewWidthMode
+            case 33:   //  Microsoft.UI.Xaml.Controls.TabViewWidthMode
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_32_TabViewWidthMode;
+                userType.StaticInitializer = StaticInitializer_33_TabViewWidthMode;
                 userType.AddEnumValue("Equal", global::Microsoft.UI.Xaml.Controls.TabViewWidthMode.Equal);
                 userType.AddEnumValue("SizeToContent", global::Microsoft.UI.Xaml.Controls.TabViewWidthMode.SizeToContent);
                 userType.AddEnumValue("Compact", global::Microsoft.UI.Xaml.Controls.TabViewWidthMode.Compact);
                 xamlType = userType;
                 break;
 
-            case 33:   //  Microsoft.UI.Xaml.Controls.TabViewItem
+            case 34:   //  Microsoft.UI.Xaml.Controls.TabViewItem
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ListViewItem"));
-                userType.Activator = Activate_33_TabViewItem;
-                userType.StaticInitializer = StaticInitializer_33_TabViewItem;
+                userType.Activator = Activate_34_TabViewItem;
+                userType.StaticInitializer = StaticInitializer_34_TabViewItem;
                 userType.AddMemberName("Header");
                 userType.AddMemberName("IsClosable");
                 userType.AddMemberName("HeaderTemplate");
@@ -661,41 +676,41 @@ namespace BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 34:   //  Microsoft.UI.Xaml.Controls.ListViewItem
+            case 35:   //  Microsoft.UI.Xaml.Controls.ListViewItem
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  Microsoft.UI.Xaml.Controls.ContentControl
+            case 36:   //  Microsoft.UI.Xaml.Controls.ContentControl
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 36:   //  Microsoft.UI.Xaml.Controls.IconSource
+            case 37:   //  Microsoft.UI.Xaml.Controls.IconSource
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 37:   //  Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings
+            case 38:   //  Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_37_TabViewItemTemplateSettings;
+                userType.StaticInitializer = StaticInitializer_38_TabViewItemTemplateSettings;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 38:   //  Microsoft.UI.Xaml.DependencyObject
+            case 39:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 39:   //  BMSManagerRebuilt.MainWindow
+            case 40:   //  BMSManagerRebuilt.MainWindow
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_39_MainWindow;
-                userType.StaticInitializer = StaticInitializer_39_MainWindow;
+                userType.Activator = Activate_40_MainWindow;
+                userType.StaticInitializer = StaticInitializer_40_MainWindow;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 40:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 41:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_40_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_40_TreeViewNode;
+                userType.Activator = Activate_41_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_41_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -707,10 +722,10 @@ namespace BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 41:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 42:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_41_IList;
-                userType.CollectionAdd = VectorAdd_41_IList;
+                userType.StaticInitializer = StaticInitializer_42_IList;
+                userType.CollectionAdd = VectorAdd_42_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
@@ -840,282 +855,312 @@ namespace BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo
             var that = (global::ScottPlot.WinUI.WinUIPlot)instance;
             that.DisplayScale = (global::System.Single)Value;
         }
-        private object get_8_TabView_TabItems(object instance)
+        private object get_8_TableConfigPage_Resistance(object instance)
+        {
+            var that = (global::BMSManagerRebuilt.GUIOperation.TableConfigPage)instance;
+            return that.Resistance;
+        }
+        private void set_8_TableConfigPage_Resistance(object instance, object Value)
+        {
+            var that = (global::BMSManagerRebuilt.GUIOperation.TableConfigPage)instance;
+            that.Resistance = (global::System.Collections.Generic.List<global::System.Double>)Value;
+        }
+        private object get_9_TableConfigPage_Voltage(object instance)
+        {
+            var that = (global::BMSManagerRebuilt.GUIOperation.TableConfigPage)instance;
+            return that.Voltage;
+        }
+        private void set_9_TableConfigPage_Voltage(object instance, object Value)
+        {
+            var that = (global::BMSManagerRebuilt.GUIOperation.TableConfigPage)instance;
+            that.Voltage = (global::System.Collections.Generic.List<global::System.Double>)Value;
+        }
+        private object get_10_TableConfigPage_WattHour(object instance)
+        {
+            var that = (global::BMSManagerRebuilt.GUIOperation.TableConfigPage)instance;
+            return that.WattHour;
+        }
+        private void set_10_TableConfigPage_WattHour(object instance, object Value)
+        {
+            var that = (global::BMSManagerRebuilt.GUIOperation.TableConfigPage)instance;
+            that.WattHour = (global::System.Collections.Generic.List<global::System.Double>)Value;
+        }
+        private object get_11_TabView_TabItems(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.TabItems;
         }
-        private object get_9_TabView_IsAddTabButtonVisible(object instance)
+        private object get_12_TabView_IsAddTabButtonVisible(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.IsAddTabButtonVisible;
         }
-        private void set_9_TabView_IsAddTabButtonVisible(object instance, object Value)
+        private void set_12_TabView_IsAddTabButtonVisible(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.IsAddTabButtonVisible = (global::System.Boolean)Value;
         }
-        private object get_10_TabView_AddTabButtonCommand(object instance)
+        private object get_13_TabView_AddTabButtonCommand(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.AddTabButtonCommand;
         }
-        private void set_10_TabView_AddTabButtonCommand(object instance, object Value)
+        private void set_13_TabView_AddTabButtonCommand(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.AddTabButtonCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_11_TabView_AddTabButtonCommandParameter(object instance)
+        private object get_14_TabView_AddTabButtonCommandParameter(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.AddTabButtonCommandParameter;
         }
-        private void set_11_TabView_AddTabButtonCommandParameter(object instance, object Value)
+        private void set_14_TabView_AddTabButtonCommandParameter(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.AddTabButtonCommandParameter = (global::System.Object)Value;
         }
-        private object get_12_TabView_AllowDropTabs(object instance)
+        private object get_15_TabView_AllowDropTabs(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.AllowDropTabs;
         }
-        private void set_12_TabView_AllowDropTabs(object instance, object Value)
+        private void set_15_TabView_AllowDropTabs(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.AllowDropTabs = (global::System.Boolean)Value;
         }
-        private object get_13_TabView_CanDragTabs(object instance)
+        private object get_16_TabView_CanDragTabs(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.CanDragTabs;
         }
-        private void set_13_TabView_CanDragTabs(object instance, object Value)
+        private void set_16_TabView_CanDragTabs(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.CanDragTabs = (global::System.Boolean)Value;
         }
-        private object get_14_TabView_CanReorderTabs(object instance)
+        private object get_17_TabView_CanReorderTabs(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.CanReorderTabs;
         }
-        private void set_14_TabView_CanReorderTabs(object instance, object Value)
+        private void set_17_TabView_CanReorderTabs(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.CanReorderTabs = (global::System.Boolean)Value;
         }
-        private object get_15_TabView_CanTearOutTabs(object instance)
+        private object get_18_TabView_CanTearOutTabs(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.CanTearOutTabs;
         }
-        private void set_15_TabView_CanTearOutTabs(object instance, object Value)
+        private void set_18_TabView_CanTearOutTabs(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.CanTearOutTabs = (global::System.Boolean)Value;
         }
-        private object get_16_TabView_CloseButtonOverlayMode(object instance)
+        private object get_19_TabView_CloseButtonOverlayMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.CloseButtonOverlayMode;
         }
-        private void set_16_TabView_CloseButtonOverlayMode(object instance, object Value)
+        private void set_19_TabView_CloseButtonOverlayMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.CloseButtonOverlayMode = (global::Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode)Value;
         }
-        private object get_17_TabView_SelectedIndex(object instance)
+        private object get_20_TabView_SelectedIndex(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.SelectedIndex;
         }
-        private void set_17_TabView_SelectedIndex(object instance, object Value)
+        private void set_20_TabView_SelectedIndex(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.SelectedIndex = (global::System.Int32)Value;
         }
-        private object get_18_TabView_SelectedItem(object instance)
+        private object get_21_TabView_SelectedItem(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.SelectedItem;
         }
-        private void set_18_TabView_SelectedItem(object instance, object Value)
+        private void set_21_TabView_SelectedItem(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.SelectedItem = (global::System.Object)Value;
         }
-        private object get_19_TabView_TabItemTemplate(object instance)
+        private object get_22_TabView_TabItemTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.TabItemTemplate;
         }
-        private void set_19_TabView_TabItemTemplate(object instance, object Value)
+        private void set_22_TabView_TabItemTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.TabItemTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_20_TabView_TabItemTemplateSelector(object instance)
+        private object get_23_TabView_TabItemTemplateSelector(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.TabItemTemplateSelector;
         }
-        private void set_20_TabView_TabItemTemplateSelector(object instance, object Value)
+        private void set_23_TabView_TabItemTemplateSelector(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.TabItemTemplateSelector = (global::Microsoft.UI.Xaml.Controls.DataTemplateSelector)Value;
         }
-        private object get_21_TabView_TabItemsSource(object instance)
+        private object get_24_TabView_TabItemsSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.TabItemsSource;
         }
-        private void set_21_TabView_TabItemsSource(object instance, object Value)
+        private void set_24_TabView_TabItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.TabItemsSource = (global::System.Object)Value;
         }
-        private object get_22_TabView_TabStripFooter(object instance)
+        private object get_25_TabView_TabStripFooter(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.TabStripFooter;
         }
-        private void set_22_TabView_TabStripFooter(object instance, object Value)
+        private void set_25_TabView_TabStripFooter(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.TabStripFooter = (global::System.Object)Value;
         }
-        private object get_23_TabView_TabStripFooterTemplate(object instance)
+        private object get_26_TabView_TabStripFooterTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.TabStripFooterTemplate;
         }
-        private void set_23_TabView_TabStripFooterTemplate(object instance, object Value)
+        private void set_26_TabView_TabStripFooterTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.TabStripFooterTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_24_TabView_TabStripHeader(object instance)
+        private object get_27_TabView_TabStripHeader(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.TabStripHeader;
         }
-        private void set_24_TabView_TabStripHeader(object instance, object Value)
+        private void set_27_TabView_TabStripHeader(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.TabStripHeader = (global::System.Object)Value;
         }
-        private object get_25_TabView_TabStripHeaderTemplate(object instance)
+        private object get_28_TabView_TabStripHeaderTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.TabStripHeaderTemplate;
         }
-        private void set_25_TabView_TabStripHeaderTemplate(object instance, object Value)
+        private void set_28_TabView_TabStripHeaderTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.TabStripHeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_26_TabView_TabWidthMode(object instance)
+        private object get_29_TabView_TabWidthMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             return that.TabWidthMode;
         }
-        private void set_26_TabView_TabWidthMode(object instance, object Value)
+        private void set_29_TabView_TabWidthMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabView)instance;
             that.TabWidthMode = (global::Microsoft.UI.Xaml.Controls.TabViewWidthMode)Value;
         }
-        private object get_27_TabViewItem_Header(object instance)
+        private object get_30_TabViewItem_Header(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabViewItem)instance;
             return that.Header;
         }
-        private void set_27_TabViewItem_Header(object instance, object Value)
+        private void set_30_TabViewItem_Header(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabViewItem)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_28_TabViewItem_IsClosable(object instance)
+        private object get_31_TabViewItem_IsClosable(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabViewItem)instance;
             return that.IsClosable;
         }
-        private void set_28_TabViewItem_IsClosable(object instance, object Value)
+        private void set_31_TabViewItem_IsClosable(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabViewItem)instance;
             that.IsClosable = (global::System.Boolean)Value;
         }
-        private object get_29_TabViewItem_HeaderTemplate(object instance)
+        private object get_32_TabViewItem_HeaderTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabViewItem)instance;
             return that.HeaderTemplate;
         }
-        private void set_29_TabViewItem_HeaderTemplate(object instance, object Value)
+        private void set_32_TabViewItem_HeaderTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabViewItem)instance;
             that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_30_TabViewItem_IconSource(object instance)
+        private object get_33_TabViewItem_IconSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabViewItem)instance;
             return that.IconSource;
         }
-        private void set_30_TabViewItem_IconSource(object instance, object Value)
+        private void set_33_TabViewItem_IconSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabViewItem)instance;
             that.IconSource = (global::Microsoft.UI.Xaml.Controls.IconSource)Value;
         }
-        private object get_31_TabViewItem_TabViewTemplateSettings(object instance)
+        private object get_34_TabViewItem_TabViewTemplateSettings(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TabViewItem)instance;
             return that.TabViewTemplateSettings;
         }
-        private object get_32_TreeViewNode_Children(object instance)
+        private object get_35_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_33_TreeViewNode_Content(object instance)
+        private object get_36_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_33_TreeViewNode_Content(object instance, object Value)
+        private void set_36_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_34_TreeViewNode_Depth(object instance)
+        private object get_37_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_35_TreeViewNode_HasChildren(object instance)
+        private object get_38_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_36_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_39_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_36_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_39_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_37_TreeViewNode_IsExpanded(object instance)
+        private object get_40_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_37_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_40_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_38_TreeViewNode_Parent(object instance)
+        private object get_41_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -1177,218 +1222,236 @@ namespace BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo
                 xamlMember.Getter = get_7_WinUIPlot_DisplayScale;
                 xamlMember.Setter = set_7_WinUIPlot_DisplayScale;
                 break;
+            case "BMSManagerRebuilt.GUIOperation.TableConfigPage.Resistance":
+                userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BMSManagerRebuilt.GUIOperation.TableConfigPage");
+                xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "Resistance", "System.Collections.Generic.List`1<Double>");
+                xamlMember.Getter = get_8_TableConfigPage_Resistance;
+                xamlMember.Setter = set_8_TableConfigPage_Resistance;
+                break;
+            case "BMSManagerRebuilt.GUIOperation.TableConfigPage.Voltage":
+                userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BMSManagerRebuilt.GUIOperation.TableConfigPage");
+                xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "Voltage", "System.Collections.Generic.List`1<Double>");
+                xamlMember.Getter = get_9_TableConfigPage_Voltage;
+                xamlMember.Setter = set_9_TableConfigPage_Voltage;
+                break;
+            case "BMSManagerRebuilt.GUIOperation.TableConfigPage.WattHour":
+                userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BMSManagerRebuilt.GUIOperation.TableConfigPage");
+                xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "WattHour", "System.Collections.Generic.List`1<Double>");
+                xamlMember.Getter = get_10_TableConfigPage_WattHour;
+                xamlMember.Setter = set_10_TableConfigPage_WattHour;
+                break;
             case "Microsoft.UI.Xaml.Controls.TabView.TabItems":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "TabItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_TabView_TabItems;
+                xamlMember.Getter = get_11_TabView_TabItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.IsAddTabButtonVisible":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "IsAddTabButtonVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_TabView_IsAddTabButtonVisible;
-                xamlMember.Setter = set_9_TabView_IsAddTabButtonVisible;
+                xamlMember.Getter = get_12_TabView_IsAddTabButtonVisible;
+                xamlMember.Setter = set_12_TabView_IsAddTabButtonVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.AddTabButtonCommand":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "AddTabButtonCommand", "System.Windows.Input.ICommand");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_TabView_AddTabButtonCommand;
-                xamlMember.Setter = set_10_TabView_AddTabButtonCommand;
+                xamlMember.Getter = get_13_TabView_AddTabButtonCommand;
+                xamlMember.Setter = set_13_TabView_AddTabButtonCommand;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.AddTabButtonCommandParameter":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "AddTabButtonCommandParameter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_TabView_AddTabButtonCommandParameter;
-                xamlMember.Setter = set_11_TabView_AddTabButtonCommandParameter;
+                xamlMember.Getter = get_14_TabView_AddTabButtonCommandParameter;
+                xamlMember.Setter = set_14_TabView_AddTabButtonCommandParameter;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.AllowDropTabs":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "AllowDropTabs", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_TabView_AllowDropTabs;
-                xamlMember.Setter = set_12_TabView_AllowDropTabs;
+                xamlMember.Getter = get_15_TabView_AllowDropTabs;
+                xamlMember.Setter = set_15_TabView_AllowDropTabs;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.CanDragTabs":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "CanDragTabs", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_TabView_CanDragTabs;
-                xamlMember.Setter = set_13_TabView_CanDragTabs;
+                xamlMember.Getter = get_16_TabView_CanDragTabs;
+                xamlMember.Setter = set_16_TabView_CanDragTabs;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.CanReorderTabs":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "CanReorderTabs", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_TabView_CanReorderTabs;
-                xamlMember.Setter = set_14_TabView_CanReorderTabs;
+                xamlMember.Getter = get_17_TabView_CanReorderTabs;
+                xamlMember.Setter = set_17_TabView_CanReorderTabs;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.CanTearOutTabs":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "CanTearOutTabs", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_TabView_CanTearOutTabs;
-                xamlMember.Setter = set_15_TabView_CanTearOutTabs;
+                xamlMember.Getter = get_18_TabView_CanTearOutTabs;
+                xamlMember.Setter = set_18_TabView_CanTearOutTabs;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.CloseButtonOverlayMode":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "CloseButtonOverlayMode", "Microsoft.UI.Xaml.Controls.TabViewCloseButtonOverlayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_TabView_CloseButtonOverlayMode;
-                xamlMember.Setter = set_16_TabView_CloseButtonOverlayMode;
+                xamlMember.Getter = get_19_TabView_CloseButtonOverlayMode;
+                xamlMember.Setter = set_19_TabView_CloseButtonOverlayMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.SelectedIndex":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_TabView_SelectedIndex;
-                xamlMember.Setter = set_17_TabView_SelectedIndex;
+                xamlMember.Getter = get_20_TabView_SelectedIndex;
+                xamlMember.Setter = set_20_TabView_SelectedIndex;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.SelectedItem":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_18_TabView_SelectedItem;
-                xamlMember.Setter = set_18_TabView_SelectedItem;
+                xamlMember.Getter = get_21_TabView_SelectedItem;
+                xamlMember.Setter = set_21_TabView_SelectedItem;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.TabItemTemplate":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "TabItemTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_19_TabView_TabItemTemplate;
-                xamlMember.Setter = set_19_TabView_TabItemTemplate;
+                xamlMember.Getter = get_22_TabView_TabItemTemplate;
+                xamlMember.Setter = set_22_TabView_TabItemTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.TabItemTemplateSelector":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "TabItemTemplateSelector", "Microsoft.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_TabView_TabItemTemplateSelector;
-                xamlMember.Setter = set_20_TabView_TabItemTemplateSelector;
+                xamlMember.Getter = get_23_TabView_TabItemTemplateSelector;
+                xamlMember.Setter = set_23_TabView_TabItemTemplateSelector;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.TabItemsSource":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "TabItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_TabView_TabItemsSource;
-                xamlMember.Setter = set_21_TabView_TabItemsSource;
+                xamlMember.Getter = get_24_TabView_TabItemsSource;
+                xamlMember.Setter = set_24_TabView_TabItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.TabStripFooter":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "TabStripFooter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_TabView_TabStripFooter;
-                xamlMember.Setter = set_22_TabView_TabStripFooter;
+                xamlMember.Getter = get_25_TabView_TabStripFooter;
+                xamlMember.Setter = set_25_TabView_TabStripFooter;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.TabStripFooterTemplate":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "TabStripFooterTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_TabView_TabStripFooterTemplate;
-                xamlMember.Setter = set_23_TabView_TabStripFooterTemplate;
+                xamlMember.Getter = get_26_TabView_TabStripFooterTemplate;
+                xamlMember.Setter = set_26_TabView_TabStripFooterTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.TabStripHeader":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "TabStripHeader", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_24_TabView_TabStripHeader;
-                xamlMember.Setter = set_24_TabView_TabStripHeader;
+                xamlMember.Getter = get_27_TabView_TabStripHeader;
+                xamlMember.Setter = set_27_TabView_TabStripHeader;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.TabStripHeaderTemplate":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "TabStripHeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_TabView_TabStripHeaderTemplate;
-                xamlMember.Setter = set_25_TabView_TabStripHeaderTemplate;
+                xamlMember.Getter = get_28_TabView_TabStripHeaderTemplate;
+                xamlMember.Setter = set_28_TabView_TabStripHeaderTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabView.TabWidthMode":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabView");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "TabWidthMode", "Microsoft.UI.Xaml.Controls.TabViewWidthMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_26_TabView_TabWidthMode;
-                xamlMember.Setter = set_26_TabView_TabWidthMode;
+                xamlMember.Getter = get_29_TabView_TabWidthMode;
+                xamlMember.Setter = set_29_TabView_TabWidthMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabViewItem.Header":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabViewItem");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_27_TabViewItem_Header;
-                xamlMember.Setter = set_27_TabViewItem_Header;
+                xamlMember.Getter = get_30_TabViewItem_Header;
+                xamlMember.Setter = set_30_TabViewItem_Header;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabViewItem.IsClosable":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabViewItem");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "IsClosable", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_TabViewItem_IsClosable;
-                xamlMember.Setter = set_28_TabViewItem_IsClosable;
+                xamlMember.Getter = get_31_TabViewItem_IsClosable;
+                xamlMember.Setter = set_31_TabViewItem_IsClosable;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabViewItem.HeaderTemplate":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabViewItem");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_TabViewItem_HeaderTemplate;
-                xamlMember.Setter = set_29_TabViewItem_HeaderTemplate;
+                xamlMember.Getter = get_32_TabViewItem_HeaderTemplate;
+                xamlMember.Setter = set_32_TabViewItem_HeaderTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabViewItem.IconSource":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabViewItem");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "IconSource", "Microsoft.UI.Xaml.Controls.IconSource");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_TabViewItem_IconSource;
-                xamlMember.Setter = set_30_TabViewItem_IconSource;
+                xamlMember.Getter = get_33_TabViewItem_IconSource;
+                xamlMember.Setter = set_33_TabViewItem_IconSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.TabViewItem.TabViewTemplateSettings":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TabViewItem");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "TabViewTemplateSettings", "Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_TabViewItem_TabViewTemplateSettings;
+                xamlMember.Getter = get_34_TabViewItem_TabViewTemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_32_TreeViewNode_Children;
+                xamlMember.Getter = get_35_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_33_TreeViewNode_Content;
-                xamlMember.Setter = set_33_TreeViewNode_Content;
+                xamlMember.Getter = get_36_TreeViewNode_Content;
+                xamlMember.Setter = set_36_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_34_TreeViewNode_Depth;
+                xamlMember.Getter = get_37_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_35_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_38_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_36_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_36_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_39_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_39_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_37_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_37_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_40_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_40_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::BMSManagerRebuilt.BMSManagerRebuilt_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_38_TreeViewNode_Parent;
+                xamlMember.Getter = get_41_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }
