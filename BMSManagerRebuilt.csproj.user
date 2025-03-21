@@ -13,13 +13,22 @@
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="GUIOperation\TableConfig\VoltageResistanceConfigPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUIOperation\PackTopology\Module3Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUIOperation\PackTopology\Module2Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="GUIOperation\NewTabNameWindow\ModuleNewTab.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="GUIOperation\PackTopology\ModulePages.xaml">
+    <Page Update="GUIOperation\PackTopology\Module1Page.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="GUIOperation\PackTopology\ModulePages.xaml">
+    <Page Update="GUIOperation\PackTopology\Module1Page.xaml">
       <SubType>Designer</SubType>
     </Page>
     <None Update="MainWindow.xaml">

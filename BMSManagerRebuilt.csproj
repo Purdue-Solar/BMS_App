@@ -15,7 +15,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="GUIOperation\NewTabNameWindow\ModuleNewTab.xaml" />
-    <None Remove="GUIOperation\PackTopology\ModulePages.xaml" />
+    <None Remove="GUIOperation\PackTopology\Module2Page.xaml" />
+    <None Remove="GUIOperation\PackTopology\Module3Page.xaml" />
+    <None Remove="GUIOperation\TableConfig\VoltageResistanceConfigPage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,6 +57,21 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+    <Page Update="GUIOperation\TableConfig\VoltageResistanceConfigPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="GUIOperation\PackTopology\Module3Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="GUIOperation\PackTopology\Module2Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="errorWindows.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -65,12 +82,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="GUIOperation\PackTopology\ModulePages.xaml">
+    <Page Update="GUIOperation\PackTopology\Module1Page.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="GUIOperation\PackTopology\ModulePages.xaml">
+    <Page Update="GUIOperation\PackTopology\Module1Page.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

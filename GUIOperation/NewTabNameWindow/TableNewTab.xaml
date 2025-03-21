@@ -12,7 +12,7 @@
     <Grid Background="DimGray">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
             <ListBox x:Name="TabNames" DisplayMemberPath="Source" Background="Gray" HorizontalContentAlignment="Center">
-                <TextBlock Text="VOLTAGE REISITANCE TABLE"/>
+                <TextBlock Text="VOLTAGE RESISTANCE TABLE"/>
                 <TextBlock Text="VOLTAGE WATTHOUR TABLE"/>
             </ListBox>
             <Button Click="Button_Click" HorizontalAlignment="Center">

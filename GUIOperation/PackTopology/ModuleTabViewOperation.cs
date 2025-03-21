@@ -20,6 +20,7 @@ namespace BMSManagerRebuilt.GUIOperation.TableConfig
         static ILogger logger = factory.CreateLogger<MainWindow>();
         public static string TabName { get; set; }
 
+
         public static async Task ModuleTabs_AddButtonClick(TabView sender,object args)
         {
             TabName = default;
@@ -44,7 +45,22 @@ namespace BMSManagerRebuilt.GUIOperation.TableConfig
             newTab.Header = TabName;
             Frame newTabFrame = new Frame();
 
-            newTabFrame.Navigate(typeof(ModulePages));
+            if (TabName == "MODULE 1")
+            {
+                newTabFrame.Navigate(typeof(Module1Page));
+
+            }
+            else if (TabName == "MODULE 2")
+            {
+                newTabFrame.Navigate(typeof(Module2Page));
+
+            }
+            else if (TabName == "MODULE 3")
+            {
+                newTabFrame.Navigate(typeof(Module3Page));
+
+            }
+
             newTab.Content = newTabFrame; 
             sender.TabItems.Add(newTab);
             sender.SelectedItem = newTab;

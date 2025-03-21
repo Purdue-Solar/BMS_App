@@ -52,14 +52,22 @@ namespace BMSManagerRebuilt.GUIOperation.TableConfig
 
             Frame newTabFrame = new Frame();
             //TableConfigPage.TabName = TabName;
-            newTabFrame.Navigate(typeof(TableConfigPage));
+            if (TabName == "VOLTAGE RESISTANCE TABLE")
+            {
+                newTabFrame.Navigate(typeof(VoltageResistanceConfigPage));
+            }
+            else if (TabName == "VOLTAGE WATTHOUR TABLE")
+            {
+                newTabFrame.Navigate(typeof(VoltageWattHourConfigPage));
+            }
+
             logger.LogDebug("New Tab Frame successfully created");
             newTab.Content = newTabFrame;
 
             //newTabFrame.TabName = TabName;
             sender.TabItems.Add(newTab);
             sender.SelectedItem = newTab;
-            logger.LogDebug("New Tab Frame successfully added");
+            logger.LogDebug("New Tab successfully added");
         }
     }
 }

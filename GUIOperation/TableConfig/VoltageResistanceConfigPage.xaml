@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="BMSManagerRebuilt.GUIOperation.VoltageResistanceConfigPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BMSManagerRebuilt.GUIOperation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:ScottPlot="using:ScottPlot.WinUI">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <CheckBox x:Name="VoltageResCheckBox" Checked="VoltageResCheckBox_Checked"  Unchecked="VoltageResCheckBox_Unchecked"  Margin="0,0,-90,0" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="TableTitle" Text="VOLTAGE RESISTANCE TABLE" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="30" HorizontalAlignment="Center" HorizontalTextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Orientation="Vertical">
+                <Grid Height="500" Width="500" Background="White" VerticalAlignment="Center">
+                    <ScottPlot:WinUIPlot x:Name="WinUIPlot"/>
+                </Grid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button HorizontalAlignment="Center" Click="Button_Click">
+                        REFRESH
+                    </Button>
+                    <Button Click="ImportButton">
+                        IMPORT
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,30">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Length" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,10,10,10"/>
+                    <TextBlock Text="Currents" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="30,15,10,0"/>
+                    <TextBlock Text="Start Voltage" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="30,20,10,0"/>
+                    <TextBlock Text="Steps" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,24,10,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <TextBox x:Name="BoxVoltResLength" KeyDown="VoltResLength_KeyDown" TextChanged="VoltResLength_TextChanged" PlaceholderText="Values" Margin="5,5,5,5"/>
+                    <TextBox x:Name="BoxVoltResCurrents" KeyDown="VoltResCurrents_KeyDown" TextChanged="VoltResCurrents_TextChanged" PlaceholderText="Values" Margin="5,5,5,5"/>
+                    <TextBox x:Name="BoxVoltResStartVoltage" KeyDown="VoltResStartVoltage_KeyDown" TextChanged="VoltResStartVoltage_TextChanged" PlaceholderText="Values" Margin="5,5,5,5"/>
+                    <TextBox x:Name="BoxVoltResSteps" KeyDown="VoltResSteps_KeyDown" TextChanged="VoltResSteps_TextChanged" PlaceholderText="Values" Margin="5,5,5,5"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Name="VoltResLengthInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                    <TextBlock x:Name="VoltResCurrentsInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                    <TextBlock x:Name="VoltResStartVoltageInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                    <TextBlock x:Name="VoltResStepsInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Page>

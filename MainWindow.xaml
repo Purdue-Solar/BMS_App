@@ -15,7 +15,7 @@
             <Grid>
                 <TextBlock Text="PSR BMS GUI ver 1.0.0" Foreground="Orange" FontWeight="Bold" FontSize="30" FontFamily="Times New Roman" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                 <Button HorizontalAlignment="Right" Margin="0,0,100,0" Width="100" BorderBrush="Black" Background="Gray">Imports</Button>
-                <Button HorizontalAlignment="Right" Width="100" BorderBrush="Black" Background="Gray">Export</Button>
+                <Button HorizontalAlignment="Right" Width="100" BorderBrush="Black" Background="Gray" Click="ExportButton_Click">Export</Button>
             </Grid>
             <TabView IsAddTabButtonVisible="False">
                 <TabViewItem Header="PARAMs CONFIGURATION" HorizontalContentAlignment="Center" Background="Gray" Foreground="White" IsClosable="False">
@@ -23,25 +23,31 @@
                         <TextBlock Text="Parameters Configuration" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="30" HorizontalAlignment="Center" HorizontalTextAlignment="Center"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                                <TextBlock Text="Isolation Limits" Foreground="FloralWhite" FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,15,0"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <CheckBox x:Name="IsoCheckBox" Checked="IsoCheckBox_Checked" Unchecked="IsoCheckBox_Unchecked" Margin="0,-5,-90,0" HorizontalAlignment="Center"/>
+                                    <TextBlock Text="Isolation Limits" Foreground="FloralWhite" FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,15,0"/>
+                                </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Text="Isolation Resistance" VerticalAlignment="Center" HorizontalTextAlignment="Center" HorizontalAlignment="Center" Margin="25,10,25,0"/>
+                                        <TextBlock Text="Isolation Resistance" VerticalAlignment="Center" HorizontalTextAlignment="Center" HorizontalAlignment="Center" Margin="25,10,25,0" />
                                         <TextBlock Text="Isolation Resistance &#10;Warning" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="25,15,25,0"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxIsoRes" KeyDown="IsoRes_KeyDown" TextChanged="IsoRes_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxIsoResWarn" KeyDown="IsoResWarn_KeyDown" TextChanged="IsoResWarn_TextChanged" PlaceholderText="Values" Margin="5"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="IsoResInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="IsoResWarnInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
                                     </StackPanel>
                                 </StackPanel>
                             </StackPanel>
                             <Line Stroke="Black" Y1="600" Margin="5,10,15,0"/>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock Text="Current Warning limit" Foreground="FloralWhite" FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,35,15,0"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <CheckBox x:Name="CurrentWarnCheckBox" Checked="CurrentWarnCheckBox_Checked" Unchecked="CurrentWarnCheckBox_Unchecked" Margin="0,30,-90,0" HorizontalAlignment="Center"/>
+                                    <TextBlock Text="Current Warning limit" Foreground="FloralWhite" FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,35,15,0"/>
+                                </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <StackPanel Orientation="Vertical">
                                         <TextBlock Text="Max Charging Warning" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
@@ -50,19 +56,22 @@
                                         <TextBlock Text="Max Discharging &#10; Temperature Warning" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,7,0,10"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxCurrentWarnMaxCharge" KeyDown="CurrentWarnMaxCharge_KeyDown" TextChanged="CurrentWarnMaxCharge_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxCurrentWarnMaxChargeTemp" KeyDown="CurrentWarnMaxChargeTemp_KeyDown" TextChanged="CurrentWarnMaxChargeTemp_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxCurrentWarnMaxDischarge" KeyDown="CurrentWarnMaxDischarge_KeyDown" TextChanged="CurrentWarnMaxDischarge_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxCurrentWarnMaxDischargeTemp" KeyDown="CurrentWarnMaxDischargeTemp_KeyDown" TextChanged="CurrentWarnMaxDischargeTemp_TextChanged" PlaceholderText="Values" Margin="5"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="CurrentWarnMaxChargeInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="CurrentWarnMaxChargeTempInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="CurrentWarnMaxDischargeInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="CurrentWarnMaxDischargeTempInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
                                     </StackPanel>
                                 </StackPanel>
-                                <TextBlock Text="Current Limits&#10; Configuration" Foreground="FloralWhite" FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <CheckBox x:Name="CurrentCheckBox" Checked="CurrentCheckBox_Checked"  Unchecked="CurrentCheckBox_Unchecked"  Margin="0,30,-90,0" HorizontalAlignment="Center"/>
+                                    <TextBlock Text="Current Limits&#10; Configuration" Foreground="FloralWhite" FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+                                </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <StackPanel Orientation="Vertical">
                                         <TextBlock Text="Max Charging Limits" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,10,0,5"/>
@@ -73,26 +82,29 @@
                                         <TextBlock Text="Max Pulse Discharge &#10; Duration Limits" HorizontalTextAlignment="Center"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20,0,20,0"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxCurrentMaxCharge" KeyDown="CurrentMaxCharge_KeyDown" TextChanged="CurrentMaxCharge_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxCurrentMaxChargeTemp" KeyDown="CurrentMaxChargeTemp_KeyDown" TextChanged="CurrentMaxChargeTemp_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxCurrentMaxDischarge" KeyDown="CurrentMaxDischarge_KeyDown" TextChanged="CurrentMaxDischarge_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxCurrentMaxDischargeTemp" KeyDown="CurrentMaxDischargeTemp_KeyDown" TextChanged="CurrentMaxDischargeTemp_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxCurrentMaxPulse" KeyDown="CurrentMaxPulse_KeyDown" TextChanged="CurrentMaxPulse_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxCurrentMaxPulseDuration" KeyDown="CurrentMaxPulseDuration_KeyDown" TextChanged="CurrentMaxPulseDuration_TextChanged" PlaceholderText="Values" Margin="5"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="CurrentMaxChargeInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="CurrentMaxChargeTempInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="CurrentMaxDischargeInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="CurrentMaxDischargeTempInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="CurrentMaxPulseInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="CurrentMaxPulseDurationInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
                                     </StackPanel>
                                 </StackPanel>
                             </StackPanel>
                             <Line Stroke="Black" Y1="600" Margin="5,10,15,0"/>
                             <StackPanel Orientation="Vertical">
-                                <TextBlock Text="Voltage Limits&#10;Configuration" Foreground="FloralWhite" FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,15,0"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <CheckBox x:Name="VoltageLimitsCheckBox" Checked="VoltageLimitsCheckBox_Checked"  Unchecked="VoltageLimitsCheckBox_Unchecked" Margin="0,0,-90,0" HorizontalAlignment="Center"/>
+                                    <TextBlock Text="Voltage Limits&#10;Configuration" Foreground="FloralWhite" FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,15,0"/>
+                                </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <StackPanel Orientation="Vertical">
                                         <TextBlock Text="Max Cell Voltage" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
@@ -103,24 +115,27 @@
                                         <TextBlock Text="Max Pack Voltage &#10; Charging" HorizontalTextAlignment="Center"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxVoltageMaxCell" KeyDown="VoltageMaxCell_KeyDown" TextChanged="VoltageMaxCell_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxVoltageMinCell" KeyDown="VoltageMinCell_KeyDown" TextChanged="VoltageMinCell_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxVoltageMaxCellCharge" KeyDown="VoltageMaxCellCharge_KeyDown" TextChanged="VoltageMaxCellCharge_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxVoltageMaxPack" KeyDown="VoltageMaxPack_KeyDown" TextChanged="VoltageMaxPack_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxVoltageMinPack" KeyDown="VoltageMinPack_KeyDown" TextChanged="VoltageMinPack_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxVoltageMaxPackCharge" KeyDown="VoltageMaxPackCharge_KeyDown" TextChanged="VoltageMaxPackCharge_TextChanged" PlaceholderText="Values" Margin="5"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="VoltageMaxCellInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="VoltageMinCellInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="VoltageMaxCellChargeInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="VoltageMaxPackInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="VoltageMinPackInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="VoltageMaxPackChargeInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
                                     </StackPanel>
                                 </StackPanel>
 
-                                <TextBlock Text="Voltage Warning&#10; Configuration" Foreground="FloralWhite" FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="0,10,20,0"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <CheckBox x:Name="VoltageWarningCheckBox" Checked="VoltageWarningCheckBox_Checked"  Unchecked="VoltageWarningCheckBox_Unchecked"  Margin="0,15,-90,0" HorizontalAlignment="Center"/>
+                                    <TextBlock Text="Voltage Warning&#10; Configuration" Foreground="FloralWhite" FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="0,10,20,0"/>
+                                </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <StackPanel Orientation="Vertical">
                                         <TextBlock Text="Max Cell Warning" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
@@ -131,20 +146,20 @@
                                         <TextBlock Text="Max Pack Warning&#10; Charging" HorizontalTextAlignment="Center"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxVoltageWarnMaxCell" KeyDown="VoltageWarnMaxCell_KeyDown" TextChanged="VoltageWarnMaxCell_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxVoltageWarnMinCell" KeyDown="VoltageWarnMinCell_KeyDown" TextChanged="VoltageWarnMinCell_TextChanged"  PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxVoltageWarnMaxCellCharge" KeyDown="VoltageWarnMaxCellCharge_KeyDown" TextChanged="VoltageWarnMaxCellCharge_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxVoltageWarnMaxPack" KeyDown="VoltageWarnMaxPack_KeyDown" TextChanged="VoltageWarnMaxPack_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxVoltageWarnMinPack" KeyDown="VoltageWarnMinPack_KeyDown" TextChanged="VoltageWarnMinPack_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxVoltageWarnMaxPackCharge" KeyDown="VoltageWarnMaxPackCharge_KeyDown" TextChanged="VoltageWarnMaxPackCharge_TextChanged" PlaceholderText="Values" Margin="5"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="VoltageWarnMaxCellInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="VoltageWarnMinCellInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="VoltageWarnMaxCellChargeInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="VoltageWarnMaxPackInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="VoltageWarnMinPackInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="VoltageWarnMaxPackChargeInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
                                     </StackPanel>
                                 </StackPanel>
                             </StackPanel>
@@ -157,161 +172,159 @@
                         <TextBlock Text="Contactor Configuration" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="30" HorizontalAlignment="Center" HorizontalTextAlignment="Center"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <StackPanel Orientation="Vertical">
-                                <TextBlock Text= "MAIN HIGH SIDE" HorizontalTextAlignment="Center" HorizontalAlignment="Center"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <CheckBox x:Name="MainHighCheckBox" Checked="MainHighCheckBox_Checked"  Unchecked="MainHighCheckBox_Unchecked"  Margin="0,-5,-90,0" HorizontalAlignment="Center"/>
+                                    <TextBlock Text= "MAIN HIGH SIDE" HorizontalTextAlignment="Center" HorizontalAlignment="Center"/>
+                                </StackPanel>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                     <StackPanel Orientation="Vertical">
 
                                         <TextBlock Text="Index" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
-                                        <TextBlock Text="Enabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
-                                        <TextBlock Text="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,23,10,0"/>
-                                        <TextBlock Text="Active High" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
-                                        <TextBlock Text="Active Low" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Flag" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
                                         <TextBlock Text="Hold Delay Ms" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
                                         <TextBlock Text="Hold Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
                                         <TextBlock Text="Pull in Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
 
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxMainHighIndex" KeyDown="MainHighIndex_KeyDown" TextChanged="MainHighIndex_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxMainHighFlag" KeyDown="MainHighFlag_KeyDown" TextChanged="MainHighFlag_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxMainHighHoldDelay" KeyDown="MainHighHoldDelay_KeyDown" TextChanged="MainHighHoldDelay_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxMainHighHoldDuty" KeyDown="MainHighHoldDuty_KeyDown" TextChanged="MainHighHoldDuty_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxMainHighPullDuty" KeyDown="MainHighPullDuty_KeyDown" TextChanged="MainHighPullDuty_TextChanged" PlaceholderText="Values" Margin="5"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="MainHighIndexInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="MainHighFlagInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="MainHighHoldDelayInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="MainHighHoldDutyInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="MainHighPullDutyInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
                                     </StackPanel>
                                 </StackPanel>
                             </StackPanel>
 
-                            <Line Stroke="Black" Y1="350" Margin="15,10,15,0"/>
+                            <Line Stroke="Black" Y1="230" Margin="15,10,15,0"/>
 
                             <StackPanel Orientation="Vertical">
-                                <TextBlock Text= "MAIN LOW SIDE" HorizontalTextAlignment="Center" HorizontalAlignment="Center"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <CheckBox x:Name="MainLowCheckBox" Checked="MainLowCheckBox_Checked"  Unchecked="MainLowCheckBox_Unchecked"  Margin="0,-5,-90,0" HorizontalAlignment="Center"/>
+                                    <TextBlock Text= "MAIN LOW SIDE" HorizontalTextAlignment="Center" HorizontalAlignment="Center"/>
+                                </StackPanel>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                     <StackPanel Orientation="Vertical">
 
                                         <TextBlock Text="Index" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
-                                        <TextBlock Text="Enabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
-                                        <TextBlock Text="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,23,10,0"/>
-                                        <TextBlock Text="Active High" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
-                                        <TextBlock Text="Active Low" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Flag" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
                                         <TextBlock Text="Hold Delay Ms" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
                                         <TextBlock Text="Hold Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
                                         <TextBlock Text="Pull in Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
 
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxMainLowIndex" KeyDown="MainLowIndex_KeyDown" TextChanged="MainLowIndex_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxMainLowFlag" KeyDown="MainLowFlag_KeyDown" TextChanged="MainLowFlag_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxMainLowHoldDelay" KeyDown="MainLowHoldDelay_KeyDown" TextChanged="MainLowHoldDelay_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxMainLowHoldDuty" KeyDown="MainLowHoldDuty_KeyDown" TextChanged="MainLowHoldDuty_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxMainLowPullDuty" KeyDown="MainLowPullDuty_KeyDown" TextChanged="MainLowPullDuty_TextChanged" PlaceholderText="Values" Margin="5"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="MainLowIndexInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="MainLowFlagInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="MainLowHoldDelayInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="MainLowHoldDutyInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="MainLowPullDutyInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
                                     </StackPanel>
                                 </StackPanel>
                             </StackPanel>
 
-                            <Line Stroke="Black" Y1="350" Margin="15,10,15,0"/>
+                            <Line Stroke="Black" Y1="230" Margin="15,10,15,0"/>
 
                             <StackPanel Orientation="Vertical">
-                                <TextBlock Text= "CHARGE" HorizontalTextAlignment="Center" HorizontalAlignment="Center"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <CheckBox x:Name="ChargeCheckBox" Checked="ChargeCheckBox_Checked"  Unchecked="ChargeCheckBox_Unchecked" Margin="0,-5,-90,0" HorizontalAlignment="Center"/>
+                                    <TextBlock Text= "CHARGE" HorizontalTextAlignment="Center" HorizontalAlignment="Center"/>
+                                </StackPanel>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                     <StackPanel Orientation="Vertical">
 
                                         <TextBlock Text="Index" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
-                                        <TextBlock Text="Enabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
-                                        <TextBlock Text="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,23,10,0"/>
-                                        <TextBlock Text="Active High" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
-                                        <TextBlock Text="Active Low" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Flag" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
                                         <TextBlock Text="Hold Delay Ms" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
                                         <TextBlock Text="Hold Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
                                         <TextBlock Text="Pull in Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
 
                                     </StackPanel>
+                                    
                                     <StackPanel Orientation="Vertical">
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxChargeIndex" KeyDown="ChargeIndex_KeyDown" TextChanged="ChargeIndex_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxChargeFlag" KeyDown="ChargeFlag_KeyDown" TextChanged="ChargeFlag_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxChargeHoldDelay" KeyDown="ChargeHoldDelay_KeyDown" TextChanged="ChargeHoldDelay_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxChargeHoldDuty" KeyDown="ChargeHoldDuty_KeyDown" TextChanged="ChargeHoldDuty_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxChargePullDuty" KeyDown="ChargePullDuty_KeyDown" TextChanged="ChargePullDuty_TextChanged" PlaceholderText="Values" Margin="5"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="ChargeIndexInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="ChargeFlagInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="ChargeHoldDelayInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="ChargeHoldDutyInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="ChargePullDutyInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
                                     </StackPanel>
                                 </StackPanel>
                             </StackPanel>
 
-                            <Line Stroke="Black" Y1="350" Margin="15,10,15,0"/>
+                            <Line Stroke="Black" Y1="230" Margin="15,10,15,0"/>
 
                             <StackPanel Orientation="Vertical">
-                                <TextBlock Text= "PRECHARGE" HorizontalTextAlignment="Center" HorizontalAlignment="Center"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <CheckBox x:Name="PreChargeCheckBox" Checked="PreChargeCheckBox_Checked"  Unchecked="PreChargeCheckBox_Unchecked"  Margin="0,-5,-90,0" HorizontalAlignment="Center"/>
+                                    <TextBlock Text= "PRECHARGE" HorizontalTextAlignment="Center" HorizontalAlignment="Center"/>
+                                </StackPanel>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                     <StackPanel Orientation="Vertical">
 
                                         <TextBlock Text="Index" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
-                                        <TextBlock Text="Enabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
-                                        <TextBlock Text="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,23,10,0"/>
-                                        <TextBlock Text="Active High" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
-                                        <TextBlock Text="Active Low" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
+                                        <TextBlock Text="Flag" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
                                         <TextBlock Text="Hold Delay Ms" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,23,10,0"/>
                                         <TextBlock Text="Hold Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
                                         <TextBlock Text="Pull in Duty Cycle" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,25,10,0"/>
 
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
-                                        <TextBox PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxPrechargeIndex" KeyDown="PrechargeIndex_KeyDown" TextChanged="PrechargeIndex_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxPrechargeFlag" KeyDown="PrechargeFlag_KeyDown" TextChanged="PrechargeFlag_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxPrechargeHoldDelay" KeyDown="PrechargeHoldDelay_KeyDown" TextChanged="PrechargeHoldDelay_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxPrechargeHoldDuty" KeyDown="PrechargeHoldDuty_KeyDown" TextChanged="PrechargeHoldDuty_TextChanged"  PlaceholderText="Values" Margin="5"/>
+                                        <TextBox x:Name="BoxPrechargePullDuty" KeyDown="PrechargePullDuty_KeyDown" TextChanged="PrechargePullDuty_TextChanged" PlaceholderText="Values" Margin="5"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                        <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="PrechargeIndexInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="PrechargeFlagInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="PrechargeHoldDelayInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="PrechargeHoldDutyInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                        <TextBlock x:Name="PrechargePullDutyInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
                                     </StackPanel>
                                 </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <StackPanel Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <CheckBox x:Name="PreChargeDelayCheckBox" Checked="PreChargeDelayCheckBox_Checked"  Unchecked="PreChargeDelayCheckBox_Unchecked"  Margin="0,0,-100,0" HorizontalAlignment="Center"/>
+                                    <TextBlock Text="Precharge Delay" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                                </StackPanel>
+                                
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <CheckBox x:Name="PWMFreqCheckBox" Checked="PWMFreqCheckBox_Checked"  Unchecked="PWMFreqCheckBox_Unchecked"  Margin="0,0,-100,-15" HorizontalAlignment="Center"/>
+                                    <TextBlock Text="Contactor PWM Frequency" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,15,10,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <TextBox x:Name="BoxPreChargeDelay" KeyDown="PreChargeDelay_KeyDown" TextChanged="PreChargeDelay_TextChanged" PlaceholderText="Can Be Float" Margin="5"/>
+                                <TextBox x:Name="BoxContactorPWMFreq" KeyDown="ContactorPWMFreq_KeyDown" TextChanged="ContactorPWMFreq_TextChanged" PlaceholderText="Integer Value" Margin="5"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock x:Name="PreChargeDelayInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                <TextBlock x:Name="ContactorPWMFreqInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
                             </StackPanel>
                         </StackPanel>
                     </StackPanel>
@@ -324,24 +337,30 @@
                             <TabViewItem Header="PACK TOPOLOGY" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Background="Gray" Foreground="White" IsClosable="False">
                                 <TabView HorizontalAlignment="Center" IsAddTabButtonVisible="True" TabCloseRequested="TabCloseRequested" AddTabButtonClick="ModuleTabAddRequested">
                                     <TabViewItem Header="OVERVIEW" HorizontalContentAlignment="Center" IsClosable="False">
-                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                            <StackPanel Orientation="Vertical">
-                                                <TextBlock Text="Number of Cell Groups" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
-                                                <TextBlock Text="Number of Parallel&#10; Cells" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,6,10,0"/>
-                                                <TextBlock Text="Number of Series&#10; Cells" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,5,10,0"/>
-                                                <TextBlock Text="Reserved" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,15,10,0"/>
+                                        <StackPanel Orientation="Vertical">
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                <TextBlock Text="Active?" Margin="0,5,0,0"/>
+                                                <CheckBox x:Name="PackTopoCheckBox" Checked="PackTopoCheckBox_Checked"  Unchecked="PackTopoCheckBox_Unchecked"  Margin="10,0,-90,0" HorizontalAlignment="Center"/>
                                             </StackPanel>
-                                            <StackPanel Orientation="Vertical">
-                                                <TextBox PlaceholderText="Values" Margin="5"/>
-                                                <TextBox PlaceholderText="Values" Margin="5"/>
-                                                <TextBox PlaceholderText="Values" Margin="5"/>
-                                                <TextBox PlaceholderText="Values" Margin="5"/>
-                                            </StackPanel>
-                                            <StackPanel Orientation="Vertical">
-                                                <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                                <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                                <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
-                                                <TextBlock Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBlock Text="Number of Cell Groups" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                                                    <TextBlock Text="Number of Parallel&#10; Cells" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,6,10,0"/>
+                                                    <TextBlock Text="Number of Series&#10; Cells" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="10,5,10,0"/>
+                                                    <TextBlock Text="Reserved" HorizontalTextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,15,10,0"/>
+                                                </StackPanel>
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBox x:Name="BoxPackTopoCellGroups" KeyDown="PackTopoCellGroups_KeyDown" TextChanged="PackTopoCellGroups_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                                    <TextBox x:Name="BoxPackTopoParallel" KeyDown="PackTopoParallel_KeyDown" TextChanged="PackTopoParallel_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                                    <TextBox x:Name="BoxPackTopoSeries" KeyDown="PackTopoSeries_KeyDown" TextChanged="PackTopoSeries_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                                    <TextBox x:Name="BoxPackTopoReserved" KeyDown="PackTopoReserved_KeyDown" TextChanged="PackTopoReserved_TextChanged" PlaceholderText="Values" Margin="5"/>
+                                                </StackPanel>
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBlock x:Name="PackTopoCellGroupsInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                                    <TextBlock x:Name="PackTopoParallelInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                                    <TextBlock x:Name="PackTopoSeriesInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                                    <TextBlock x:Name="PackTopoReservedInd" Text="X" Margin="12" FontWeight="ExtraBold" Foreground="Red"/>
+                                                </StackPanel>
                                             </StackPanel>
                                         </StackPanel>
                                     </TabViewItem>
